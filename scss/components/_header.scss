@@ -1,7 +1,34 @@
 //===========================================
 	// -Header start
 //===========================================
-
+.banner{
+	background-image: url("../images/header-bg.png");
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 1012px;
+	.layout{
+		background-color: rgba(0,0,0,0.6);
+		height:1012px;
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
+	.header-content{
+		max-width:rem(660);
+		padding-right: 264px;
+		h1{
+			color: white;
+			font-size:rem(100);
+		}
+		p{
+			font-size: 18px;
+			color: white;
+		} 
+	}
+}
 //===========================================
 	// -Header end
 //===========================================

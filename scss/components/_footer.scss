@@ -49,7 +49,7 @@ footer{
 			
 			.contact-info{
 				padding: rem(70) 0;
-				min-width: 40%;
+				min-width: 35%;
 				
 				h3{
 					font-family: $font-default;
@@ -61,7 +61,7 @@ footer{
 				.info-item{
 					display: flex;
 					align-items: center;
-					width: 100%;
+					width: 90%;
 					margin: rem(30) 0;
 				}
 				
@@ -110,6 +110,12 @@ footer{
 					font-family: $font-default;
 					font-size: rem(18);
 					font-weight: 900;
+					margin-bottom: rem(45);
+				}
+
+				.btn-primery-orange{
+					margin-left: 20%;
+					margin-top: rem(30);
 				}
 			}
 		}

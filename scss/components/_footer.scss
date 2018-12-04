@@ -33,6 +33,12 @@ footer{
 				font-size: rem(20);
 				padding: 0 rem(230);
 				font-weight: 300;
+
+				@include mq('sm', max){
+					padding: 0 rem(30);
+					line-height: 1.5;
+					font-size: 14px;
+				}
 			}
 		}
 	}
@@ -46,6 +52,7 @@ footer{
 			display: flex;
 			justify-content: space-around;
 			align-items: flex-start;
+			flex-wrap: wrap;
 			
 			.contact-info{
 				padding: rem(70) 0;
@@ -98,8 +105,6 @@ footer{
 					}
 				}
 				
-				
-				
 			}
 
 			.footer-form{
@@ -116,14 +121,33 @@ footer{
 				.btn-primery-orange{
 					margin-left: 20%;
 					margin-top: rem(30);
+
+					@include mq('md', max){
+						font-size: rem(16);
+					}
 				}
 			}
-		}
-		
-		
-		
+		}	
 	}
 	// Contact Section End
+
+	// Bottom Footer Start
+	.bottom-footer{
+		background-color: $secondry-color;
+		color: $white;
+		text-align: center;
+		padding: rem(35) 0;
+
+		.container{
+			margin: 0 auto;
+
+			p{
+				font-size: rem(17);
+				margin: rem(20) 0;
+			}
+		}
+	}
+	// Bottom Footer End
 }
 //===========================================
 // -Footer end

@@ -589,6 +589,65 @@ html, body {
       .navbar .main-nav .logo:hover,
       .navbar .main-nav .nav-links:hover {
         color: #ee5d30; } }
+.features {
+  display: flex;
+  position: relative; }
+  .features .features-head {
+    display: flex;
+    padding-top: 3.125rem;
+    background: #fff; }
+  .features .features-awesome {
+    justify-content: flex-start;
+    padding: 0 20%;
+    width: 40%;
+    color: #333333;
+    letter-spacing: 1px;
+    flex-wrap: wrap; }
+  .features h1 {
+    font-size: 3.1875rem; }
+  .features button {
+    height: 4.25rem;
+    width: 13.4375rem;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    border: none;
+    color: white;
+    background: #2f2339; }
+  .features .features-logo {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-align: left; }
+    .features .features-logo .logo-image {
+      background: #fff;
+      width: 5rem;
+      height: 5rem;
+      border-radius: 100%;
+      text-align: center; }
+    .features .features-logo .logo-image img {
+      height: 40px;
+      width: 40px;
+      padding-top: 1.25rem; }
+    .features .features-logo .logo-1 {
+      margin: 5rem; }
+      .features .features-logo .logo-1 h4 {
+        letter-spacing: 2px;
+        color: #fff; }
+      .features .features-logo .logo-1 p {
+        width: 12.5rem;
+        margin-top: 3.75rem;
+        font-size: 1.125rem;
+        color: #949494; }
+  .features .feature-bg {
+    background-color: #ee5d30;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 250px;
+    width: 100%;
+    z-index: -1; }
+
 .we-r-creative-agency {
   width: 100%;
   height: 1000px;

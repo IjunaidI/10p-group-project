@@ -43,8 +43,13 @@ footer{
 		
 		.container{
 			margin: 0 auto;
+			display: flex;
+			justify-content: space-around;
+			align-items: flex-start;
 			
 			.contact-info{
+				padding: rem(70) 0;
+				min-width: 40%;
 				
 				h3{
 					font-family: $font-default;
@@ -52,8 +57,64 @@ footer{
 					text-transform: uppercase;
 					font-weight: 900;
 				}
+				
+				.info-item{
+					display: flex;
+					align-items: center;
+					width: 100%;
+					margin: rem(30) 0;
+				}
+				
+				.icon{
+					background-color: $primery-color;
+					padding: rem(16);
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					border-radius: 1000px;
+					margin-right: rem(40);
+
+					i {
+						color: $white;
+						font-size: rem(30);
+					}
+				}
+
+				.text{
+					h5, p{
+						margin: 0;
+						font-family: $font-default;
+
+					}
+
+					h5{
+						font-size: rem(18);
+						font-weight: bold;
+					}
+
+					p{
+						color: $gray;
+						margin: rem(6) 0;
+					}
+				}
+				
+				
+				
+			}
+
+			.footer-form{
+				padding: rem(70) 0;
+				min-width: 40%;
+				
+				h3{
+					font-family: $font-default;
+					font-size: rem(18);
+					font-weight: 900;
+				}
 			}
 		}
+		
+		
 		
 	}
 	// Contact Section End

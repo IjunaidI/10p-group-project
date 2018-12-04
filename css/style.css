@@ -702,6 +702,131 @@ footer .bottom-footer {
       .navbar .main-nav .logo:hover,
       .navbar .main-nav .nav-links:hover {
         color: #ee5d30; } }
+.we-are-creative-agency {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0px; }
+  .we-are-creative-agency .we-are-creative-agency-container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; }
+    .we-are-creative-agency .we-are-creative-agency-container .purple-div {
+      position: absolute;
+      left: -200px;
+      top: 0px;
+      width: 30%;
+      height: 100%;
+      background-color: #2f2339;
+      z-index: -1; }
+    .we-are-creative-agency .we-are-creative-agency-container .creative-box-left {
+      background-color: #2f2339;
+      min-width: 300px;
+      width: 75%; }
+      .we-are-creative-agency .we-are-creative-agency-container .creative-box-left h1 {
+        padding: 20px;
+        color: #fff;
+        font-size: 3.125rem; }
+      .we-are-creative-agency .we-are-creative-agency-container .creative-box-left div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        color: #fff; }
+        .we-are-creative-agency .we-are-creative-agency-container .creative-box-left div .box {
+          margin: 20px;
+          width: 300px;
+          min-width: 275px;
+          max-width: 100%;
+          padding-right: 85px; }
+          .we-are-creative-agency .we-are-creative-agency-container .creative-box-left div .box p {
+            line-height: 30px;
+            font-size: 1.25rem; }
+            .we-are-creative-agency .we-are-creative-agency-container .creative-box-left div .box p span {
+              display: block;
+              padding: 10px 0px; }
+    .we-are-creative-agency .we-are-creative-agency-container .ipad-right {
+      width: 50%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center; }
+      .we-are-creative-agency .we-are-creative-agency-container .ipad-right img {
+        margin-left: -120px; }
+  @media (max-width: 1199px) {
+    .we-are-creative-agency {
+      display: block;
+      text-align: center; }
+      .we-are-creative-agency .we-are-creative-agency-container {
+        width: 100%;
+        display: block; }
+        .we-are-creative-agency .we-are-creative-agency-container .purple-div {
+          position: absolute;
+          left: -200px;
+          top: 0px;
+          width: 100%;
+          height: 50%;
+          z-index: -1; }
+        .we-are-creative-agency .we-are-creative-agency-container .creative-box-left {
+          width: 100%;
+          margin: 0 auto;
+          padding-bottom: 150px; }
+          .we-are-creative-agency .we-are-creative-agency-container .creative-box-left div {
+            justify-content: center; }
+            .we-are-creative-agency .we-are-creative-agency-container .creative-box-left div .box {
+              width: 40%;
+              padding: 5px; }
+        .we-are-creative-agency .we-are-creative-agency-container .ipad-right {
+          width: 100%;
+          margin-top: -150px;
+          justify-content: center; }
+          .we-are-creative-agency .we-are-creative-agency-container .ipad-right img {
+            margin: 5px 0px;
+            height: 350px;
+            width: 300px; } }
+
+.we-are-creative {
+  margin-top: 150px;
+  background-color: #ee5d30;
+  display: flex;
+  justify-content: center;
+  height: 450px;
+  align-items: center; }
+  .we-are-creative .we-are-orange-container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .we-are-creative .we-are-orange-container h1 {
+      font-size: 3.125rem;
+      color: #fff;
+      width: 100%;
+      margin: 0px;
+      padding-left: 200px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center; }
+      .we-are-creative .we-are-orange-container h1 img {
+        margin-left: 100px;
+        transform: scale(1.1); }
+  @media (max-width: 1199px) {
+    .we-are-creative {
+      display: block;
+      text-align: center; }
+      .we-are-creative .we-are-orange-container {
+        width: 100%; }
+        .we-are-creative .we-are-orange-container h1 {
+          padding: 10px;
+          flex-direction: column;
+          line-height: 40px;
+          font-size: 3.75rem; }
+          .we-are-creative .we-are-orange-container h1 img {
+            margin-top: 30px;
+            height: 300px;
+            margin: 30px;
+            transform: scale(1); } }
+
 .features {
   display: flex;
   position: relative; }
@@ -760,10 +885,5 @@ footer .bottom-footer {
     height: 250px;
     width: 100%;
     z-index: -1; }
-
-.we-r-creative-agency {
-  width: 100%;
-  height: 1000px;
-  background-color: #0000007a; }
 
 /*# sourceMappingURL=style.css.map */

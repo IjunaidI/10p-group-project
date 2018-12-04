@@ -384,6 +384,21 @@ th {
   .btn[disabled], .btn.disabled {
     cursor: not-allowed; }
 
+.btn-primery-purple, .btn-primery-orange, .btn-global {
+  height: 4.25rem;
+  width: 13.4375rem;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  border: none;
+  color: white; }
+
+.btn-primery-orange {
+  background-color: #ee5d30; }
+
+.btn-primery-purple {
+  background-color: #2f2339; }
+
 html, body {
   font-family: "Lato", sans-serif;
   font-size: 8px; }
@@ -401,7 +416,8 @@ html, body {
       font-size: 16px; } }
 
 .container {
-  width: 80%; }
+  width: 80%;
+  margin: 0 auto; }
 
 @font-face {
   font-family: 'font-icon';
@@ -452,33 +468,74 @@ html, body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 1012px; }
+  height: 63.25rem; }
   .banner .layout {
     background-color: rgba(0, 0, 0, 0.6);
-    height: 1012px;
+    height: 63.25rem;
     width: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center; }
   .banner .header-content {
-    max-width: 41.25rem;
-    padding-right: 264px; }
+    max-width: 43.75rem;
+    padding-right: 14.75rem;
+    margin-right: 12.5rem; }
     .banner .header-content h1 {
       color: white;
-      font-size: 6.25rem; }
+      font-size: 6.25rem;
+      margin: 0;
+      padding: 0;
+      line-height: 85px;
+      font-family: "Montserrat", sans-serif; }
     .banner .header-content p {
-      font-size: 18px;
-      color: white; }
+      font-size: 1.125rem;
+      color: white;
+      padding-bottom: 2.375rem;
+      padding-top: 4.25rem;
+      line-height: 1.75rem;
+      font-family: "Lato", sans-serif; }
+
+.about-company {
+  display: flex;
+  justify-content: center; }
+  .about-company .side-image {
+    width: 40%; }
+  .about-company .text {
+    background-color: #2f2339;
+    width: 60%;
+    height: 51.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 21rem; }
+    .about-company .text .ab-content {
+      width: 35.875rem;
+      margin-left: 11.625rem; }
+      .about-company .text .ab-content h1 {
+        color: white;
+        font-size: 3.20375rem; }
+      .about-company .text .ab-content .top {
+        color: white;
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+        padding-bottom: 1.375rem; }
+      .about-company .text .ab-content .bottom {
+        color: white;
+        font-size: 1.125rem;
+        padding-bottom: 4.375rem;
+        line-height: 1.875rem; }
 
 .navbar {
-  font-size: 15px;
-  padding-bottom: 10px; }
+  font-size: 0.9375rem;
+  padding-bottom: 0.625rem; }
 
 .icons i {
   color: black;
   font-size: 20px;
   display: inline-flex;
-  justify-content: space-around; }
+  justify-content: center;
+  align-items: center;
+  padding-right: 32px; }
 .icons a {
   text-decoration: none; }
 
@@ -494,7 +551,8 @@ html, body {
 .main-nav li {
   text-align: center;
   display: flex;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  font-family: "Lato", sans-serif; }
 
 .logo {
   display: inline-block;
@@ -513,7 +571,7 @@ html, body {
 .active {
   display: block; }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .navbar {
     display: flex;
     justify-content: space-between;

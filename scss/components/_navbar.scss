@@ -1,42 +1,42 @@
 //===========================================
-	// -Navbar start
+// -Navbar start
 //===========================================
 .navbar {
-	font-size: 15px;
-	padding-bottom: 10px;
-}
-.icons{
-	i{
-	color: black;
-	font-size: 20px;
-	display: inline-flex;
-	justify-content: space-around;
-}
-a{
-	text-decoration: none;
-}
-}
-.main-nav {
-	list-style-type: none;
-	display: none;
-}
-
-.nav-links,
-.logo {
-	text-decoration: none;
-	color: black;
-}
-
-.main-nav li {
-	text-align: center;
-	display: flex;
-    justify-content: flex-end;
-}
-.logo {
-	display: inline-block;
-	font-size: 22px;
-	margin-top: 10px;
-	margin-left: 20px;
+	font-size: rem(15);
+	padding-bottom: rem(10);
+	height: rem(107);
+	.nav-links,
+	.logo {
+		text-decoration: none;
+		color: black;
+		display: inline-block;
+		font-size: 22px;
+		margin-top: 10px;
+		margin-left: 20px;
+	}
+	.main-nav {
+		list-style-type: none;
+		display: none;
+		li {
+			text-align: center;
+			display: flex;
+			justify-content: flex-end;
+			font-family: $font-default;
+		}
+	}
+	.icons{
+		i{
+			color: black;
+			font-size: 20px;
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+			padding-right: 32px;
+		}
+		a{
+			text-decoration: none;
+		}
+	}
 }
 
 .navbar-toggle {
@@ -52,43 +52,40 @@ a{
 	display: block;
 }
 
-@media screen and (min-width: 768px) {
+@include mq-only('xs', 'lg'){
 	.navbar {
 		display: flex;
 		justify-content: space-between;
 		padding-bottom: 0;
-		height: 70px;
+		height: rem(107);
 		align-items: center;
-	}
-
-	.main-nav {
-		display: flex;
-		margin-right: 30px;
-		flex-direction: row;
-		justify-content: flex-end;
-	}
-
-	.main-nav li {
-		margin: 0;
-	}
-
-	.nav-links {
-		margin-left: 40px;
-	}
-
-	.logo {
-		margin-top: 0;
-	}
-
-	.navbar-toggle {
-		display: none;
-	}
-
-	.logo:hover,
-	.nav-links:hover {
-		color: $primery-color;
+		.main-nav {
+			display: flex;
+			margin-right: 30px;
+			flex-direction: row;
+			justify-content: flex-end;
+			li {
+				margin: 0;
+			}
+			.nav-links {
+				margin-left: 40px;
+			}
+			.logo {
+				margin-top: 0;
+			}
+			
+			.navbar-toggle {
+				display: none;
+			}
+			
+			.logo:hover,
+			.nav-links:hover {
+				color: $primery-color;
+			}
+		}
+		
 	}
 }
 //===========================================
-	// -Navbar end
+// -Navbar end
 //===========================================

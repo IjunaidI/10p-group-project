@@ -527,38 +527,33 @@ html, body {
 
 .navbar {
   font-size: 0.9375rem;
-  padding-bottom: 0.625rem; }
-
-.icons i {
-  color: black;
-  font-size: 20px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  padding-right: 32px; }
-.icons a {
-  text-decoration: none; }
-
-.main-nav {
-  list-style-type: none;
-  display: none; }
-
-.nav-links,
-.logo {
-  text-decoration: none;
-  color: black; }
-
-.main-nav li {
-  text-align: center;
-  display: flex;
-  justify-content: flex-end;
-  font-family: "Lato", sans-serif; }
-
-.logo {
-  display: inline-block;
-  font-size: 22px;
-  margin-top: 10px;
-  margin-left: 20px; }
+  padding-bottom: 0.625rem;
+  height: 6.6875rem; }
+  .navbar .nav-links,
+  .navbar .logo {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 20px; }
+  .navbar .main-nav {
+    list-style-type: none;
+    display: none; }
+    .navbar .main-nav li {
+      text-align: center;
+      display: flex;
+      justify-content: flex-end;
+      font-family: "Lato", sans-serif; }
+  .navbar .icons i {
+    color: black;
+    font-size: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 32px; }
+  .navbar .icons a {
+    text-decoration: none; }
 
 .navbar-toggle {
   position: absolute;
@@ -571,35 +566,29 @@ html, body {
 .active {
   display: block; }
 
-@media screen and (min-width: 992px) {
+@media (min-width: 0) and (max-width: 991px) {
   .navbar {
     display: flex;
     justify-content: space-between;
     padding-bottom: 0;
-    height: 70px;
+    height: 6.6875rem;
     align-items: center; }
-
-  .main-nav {
-    display: flex;
-    margin-right: 30px;
-    flex-direction: row;
-    justify-content: flex-end; }
-
-  .main-nav li {
-    margin: 0; }
-
-  .nav-links {
-    margin-left: 40px; }
-
-  .logo {
-    margin-top: 0; }
-
-  .navbar-toggle {
-    display: none; }
-
-  .logo:hover,
-  .nav-links:hover {
-    color: #ee5d30; } }
+    .navbar .main-nav {
+      display: flex;
+      margin-right: 30px;
+      flex-direction: row;
+      justify-content: flex-end; }
+      .navbar .main-nav li {
+        margin: 0; }
+      .navbar .main-nav .nav-links {
+        margin-left: 40px; }
+      .navbar .main-nav .logo {
+        margin-top: 0; }
+      .navbar .main-nav .navbar-toggle {
+        display: none; }
+      .navbar .main-nav .logo:hover,
+      .navbar .main-nav .nav-links:hover {
+        color: #ee5d30; } }
 .we-r-creative-agency {
   width: 100%;
   height: 1000px;

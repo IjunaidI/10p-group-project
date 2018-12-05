@@ -12,7 +12,7 @@
 		width: 30%;
 		min-width: 200px;
 		
-
+		
 		@include mq('lg', max){
 			width: 100%;
 			margin-bottom: rem(16);
@@ -49,13 +49,17 @@
 		flex-wrap: wrap;
 		width: 70%;
 		// min-width: 600px;
-
+		
 		
 		@include mq('lg', max){
-			width: 100%;
-			
+			width: 80%;
+			margin: 0 auto;
 		}
-
+		
+		@include mq('sm', max){
+			justify-content: center;
+		}
+		
 		.bg{
 			background-color: $primery-color;
 			position: absolute;
@@ -63,28 +67,27 @@
 			left: 0;
 			z-index: -1;
 			width: 90%;
-			height: 40%;
+			height: 50%;
 			display: none;
-
+			
 			@include mq('sm', max){
 				display: block;
 			}
 		}
 		
 		.logo-image {
+			display: flex;
+			justify-content: center;
+			align-items: center;
 			background: $white;
 			width: 5rem;
 			height: 5rem;
+			padding: 10px;
 			border-radius: 100%;
 			// text-align: center;
+		
 		}
 		
-		.logo-image img {
-			height: 60px;
-			width: 40px;
-			padding-top: 1.25rem;
-			
-		}
 		
 		.logo-1 {
 			// margin: 2rem;
@@ -93,11 +96,38 @@
 			position: relative;
 			// padding: 16px;
 			
-			@include mq('sm', max){
-				// padding-right: rem(16);
-				// text-align: center;
+			@include mq('lg', max){
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				.logo-image {
+					padding: 0rem;
+					width: 8rem;
+					height: 8rem;
+					img {
+						height: 40px;
+						width: 40px;
+					}
+				}
 			}
 
+			@include mq('sm', max){
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				.logo-image {
+					padding: 0rem;
+					width: 8rem;
+					height: 8rem;
+					img {
+						height: 20px;
+						width: 20px;
+					}
+				}
+			}
+			
 			
 			h4 {
 				letter-spacing: 2px;
@@ -122,7 +152,7 @@
 		height: 50%;
 		width: 100%;
 		z-index: -1;
-
+		
 		@include mq('sm', max){
 			display: none;
 		}

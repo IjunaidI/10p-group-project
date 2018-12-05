@@ -747,7 +747,7 @@ footer .bottom-footer {
   justify-content: flex-end; }
 
 .product-image {
-  height: 822px;
+  height: 51.375rem;
   display: flex;
   align-items: center;
   flex: 1;
@@ -762,32 +762,32 @@ footer .bottom-footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 90px; }
+  padding-top: 5.625rem; }
   .product-details .product-details-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 50%;
-    margin-bottom: 43px; }
+    margin-bottom: 2.6875rem; }
   .product-details h1 {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
-    font-size: 51px;
+    font-size: 3.1875rem;
     color: white;
-    margin: 11px 0; }
+    margin: 0.6875rem 0; }
   .product-details .product-descriptions {
     display: flex;
     flex-direction: column;
     align-items: center; }
     .product-details .product-descriptions .product-description {
-      margin-bottom: 40px; }
+      margin-bottom: 2.5rem; }
     .product-details .product-descriptions p, .product-details .product-descriptions h3 {
       color: white;
       font-family: "Lato", sans-serif; }
     .product-details .product-descriptions h3 {
-      font-size: 24px; }
+      font-size: 1.5rem; }
     .product-details .product-descriptions p {
-      font-size: 18px; }
+      font-size: 1.125rem; }
 
 @media (max-width: 991px) {
   .product-box {
@@ -800,7 +800,16 @@ footer .bottom-footer {
       .product-box .product-image img {
         margin: 50px 0 -50px 0; }
     .product-box .product-details {
-      flex-basis: 660px; } }
+      flex-basis: 660px; }
+      .product-box .product-details .product-details-container {
+        align-items: center;
+        width: 90%; }
+        .product-box .product-details .product-details-container .headings {
+          text-align: center; }
+          .product-box .product-details .product-details-container .headings h1 {
+            font-size: 2.5625rem; }
+        .product-box .product-details .product-details-container .product-descriptions {
+          text-align: center; } }
 .showcase-box {
   display: flex;
   flex-wrap: wrap; }
@@ -822,8 +831,8 @@ footer .bottom-footer {
       color: black;
       font-family: "Lato", sans-serif; }
     .showcase-images .showcase-image p {
-      line-height: 30px;
-      font-size: 18px; }
+      line-height: 1.875rem;
+      font-size: 1.125rem; }
   .showcase-images img {
     width: 17.625rem;
     height: 11.75rem; }
@@ -837,7 +846,7 @@ footer .bottom-footer {
     height: 100%;
     align-items: center;
     justify-content: center;
-    margin-left: 12px; }
+    margin-left: 0.75rem; }
   .showcase-description .showcase-detail {
     width: 23.75rem; }
     .showcase-description .showcase-detail h1 {
@@ -850,8 +859,8 @@ footer .bottom-footer {
       color: white;
       font-family: "Lato", sans-serif; }
     .showcase-description .showcase-detail .showcase-details p {
-      line-height: 30px;
-      font-size: 18px; }
+      line-height: 1.875rem;
+      font-size: 1.125rem; }
 
 @media (max-width: 991px) {
   .showcase-description {
@@ -864,17 +873,19 @@ footer .bottom-footer {
       margin-left: 0; }
       .showcase-description .showcase-description-container .showcase-detail {
         width: 100%;
-        margin: 12px 0; }
+        margin: 0.75rem 0; }
         .showcase-description .showcase-description-container .showcase-detail .headings, .showcase-description .showcase-description-container .showcase-detail .showcase-details {
           display: flex;
           flex-direction: column;
           align-items: center;
           text-align: center; }
           .showcase-description .showcase-description-container .showcase-detail .headings button, .showcase-description .showcase-description-container .showcase-detail .showcase-details button {
-            font-size: 12px; }
+            font-size: 0.75rem; }
 
   .showcase-box .showcase-images .showcase-images-container {
-    justify-content: center; } }
+    justify-content: center; }
+    .showcase-box .showcase-images .showcase-images-container .showcase-image {
+      text-align: center; } }
 .we-are-creative-agency {
   display: flex;
   justify-content: center;
@@ -1041,7 +1052,11 @@ footer .bottom-footer {
     width: 70%; }
     @media (max-width: 991px) {
       .features .features-logo {
-        width: 100%; } }
+        width: 80%;
+        margin: 0 auto; } }
+    @media (max-width: 575px) {
+      .features .features-logo {
+        justify-content: center; } }
     .features .features-logo .bg {
       background-color: #ee5d30;
       position: absolute;
@@ -1049,24 +1064,50 @@ footer .bottom-footer {
       left: 0;
       z-index: -1;
       width: 90%;
-      height: 40%;
+      height: 50%;
       display: none; }
       @media (max-width: 575px) {
         .features .features-logo .bg {
           display: block; } }
     .features .features-logo .logo-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       background: #fff;
       width: 5rem;
       height: 5rem;
+      padding: 10px;
       border-radius: 100%; }
-    .features .features-logo .logo-image img {
-      height: 60px;
-      width: 40px;
-      padding-top: 1.25rem; }
     .features .features-logo .logo-1 {
       padding: 2rem;
       min-width: calc(100% / 3);
       position: relative; }
+      @media (max-width: 991px) {
+        .features .features-logo .logo-1 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column; }
+          .features .features-logo .logo-1 .logo-image {
+            padding: 0rem;
+            width: 8rem;
+            height: 8rem; }
+            .features .features-logo .logo-1 .logo-image img {
+              height: 40px;
+              width: 40px; } }
+      @media (max-width: 575px) {
+        .features .features-logo .logo-1 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column; }
+          .features .features-logo .logo-1 .logo-image {
+            padding: 0rem;
+            width: 8rem;
+            height: 8rem; }
+            .features .features-logo .logo-1 .logo-image img {
+              height: 20px;
+              width: 20px; } }
       .features .features-logo .logo-1 h4 {
         letter-spacing: 2px;
         color: #fff; }

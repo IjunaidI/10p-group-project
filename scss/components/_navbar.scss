@@ -3,11 +3,11 @@
 //===========================================
 .navbar {
 	font-size: rem(15);
-	padding: rem(10);
-	// height: rem(107);
+	padding: rem(20);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	font-weight: bold;
 	.logo {
 		text-decoration: none;
 		color: black;
@@ -28,7 +28,7 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			padding-right: 25px;
+			padding-right: rem(25);
 		}
 	}
 }
@@ -41,7 +41,7 @@
 	}
 	li {
 		font-family: $font-default;
-		padding: 0px 10px;
+		padding: rem(0) rem(10);
 		font-size: rem(18); 
 	}
 	
@@ -52,14 +52,13 @@
 		display: flex;
 		justify-content: space-between;
 		padding-bottom: 0;
-		height: 70px;
 		align-items: center;
 		i {
 			display: block;
 		}
 		.logo {
 			img {
-				width: 100px;
+				width: rem(100);
 			}
 		}
 

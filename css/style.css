@@ -1048,9 +1048,11 @@ footer .bottom-footer {
   display: flex;
   position: relative;
   flex-wrap: wrap;
-  justify-content: flex-start; }
+  justify-content: flex-start;
+  padding-top: 5.3125rem; }
   .features .features-head {
     padding-top: 0rem;
+    padding-left: 3.125rem;
     background: #fff;
     width: 30%;
     min-width: 200px; }
@@ -1058,17 +1060,16 @@ footer .bottom-footer {
       .features .features-head {
         width: 100%;
         margin-bottom: 1rem;
+        padding-left: 0rem;
         text-align: center; } }
     .features .features-head .features-awesome {
-      padding: 0 30px;
       color: #333333;
       letter-spacing: 1px;
       flex-wrap: wrap; }
       .features .features-head .features-awesome h1 {
         font-size: 3.1875rem; }
       .features .features-head .features-awesome button {
-        height: 4.25rem;
-        width: 13.4375rem;
+        padding: 0.625rem 2.5rem;
         font-weight: bold;
         font-family: "Montserrat", sans-serif;
         font-size: 18px;
@@ -1084,22 +1085,11 @@ footer .bottom-footer {
     @media (max-width: 991px) {
       .features .features-logo {
         width: 80%;
-        margin: 0 auto; } }
+        margin: 0 auto;
+        padding: 0; } }
     @media (max-width: 575px) {
       .features .features-logo {
         justify-content: center; } }
-    .features .features-logo .bg {
-      background-color: #ee5d30;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
-      width: 90%;
-      height: 50%;
-      display: none; }
-      @media (max-width: 575px) {
-        .features .features-logo .bg {
-          display: block; } }
     .features .features-logo .logo-image {
       display: flex;
       justify-content: center;
@@ -1125,7 +1115,21 @@ footer .bottom-footer {
             height: 8rem; }
             .features .features-logo .logo-1 .logo-image img {
               height: 40px;
-              width: 40px; } }
+              width: 40px; }
+          .features .features-logo .logo-1 p {
+            text-align: center; }
+          .features .features-logo .logo-1 .bg {
+            background-color: #ee5d30;
+            position: absolute;
+            top: 0;
+            z-index: -1;
+            width: 90%;
+            height: 50%;
+            display: none; } }
+    @media (max-width: 991px) and (max-width: 575px) {
+      .features .features-logo .logo-1 .bg {
+        display: block; } }
+
       @media (max-width: 575px) {
         .features .features-logo .logo-1 {
           display: flex;
@@ -1141,7 +1145,8 @@ footer .bottom-footer {
               width: 20px; } }
       .features .features-logo .logo-1 h4 {
         letter-spacing: 2px;
-        color: #fff; }
+        color: #fff;
+        padding: 0.625rem; }
       .features .features-logo .logo-1 p {
         width: 12.5rem;
         margin-top: 3.75rem;

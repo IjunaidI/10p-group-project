@@ -23,7 +23,6 @@
 			background-color:  #2f2339;
 			min-width: 300px;
 			width: 75%;
-			
 			h1 {
 				padding: 20px;
 				color: $white;
@@ -35,6 +34,8 @@
 				justify-content: flex-start;
 				align-items: center;
 				color: $white;
+				padding-bottom: 30px;
+				
 				
 				.box {
 					margin: 20px;
@@ -102,10 +103,10 @@
 		} 
 	}
 }
-// 
 // start 
 .we-are-creative {
 	margin-top: 150px;
+	margin-bottom: 150px;
 	background-color: #ee5d30;
 	display: flex;
 	justify-content: center;
@@ -147,10 +148,7 @@
 					margin: 30px;
 					transform: scale(1.0);
 				}
-      }
-      
-      
-      
+			}
 		} 
 	}
 }

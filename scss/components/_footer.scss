@@ -1,0 +1,154 @@
+//===========================================
+// -Footer start
+//===========================================
+footer{
+	// Thanks Greeting Start
+	.thanks-greeting{
+		font-family: $font-primery;
+		color: $white;
+		background-image: url('../images/footer-img.jpg');
+		background-position: center;
+		background-size: cover;
+		// height: 100%
+		
+		.container{
+			margin: 0 auto;
+			padding: rem(118) 0;
+			
+			h2{
+				font-size: rem(51);
+				font-weight: 600;
+				margin: rem(33) 0;
+				
+			}
+			
+			h4{
+				font-size: rem(33);
+				font-weight: 600;
+				margin: rem(33) 0;
+			}
+			
+			p{
+				font-family: $font-default;
+				font-size: rem(20);
+				padding: 0 rem(230);
+				font-weight: 300;
+
+				@include mq('sm', max){
+					padding: 0 rem(30);
+					line-height: 1.5;
+					font-size: 14px;
+				}
+			}
+		}
+	}
+	// Thanks Greeting End
+	
+	// Contact Section Start
+	.contact{
+		
+		.container{
+			margin: 0 auto;
+			display: flex;
+			justify-content: space-around;
+			align-items: flex-start;
+			flex-wrap: wrap;
+			
+			.contact-info{
+				padding: rem(70) 0;
+				min-width: 35%;
+				
+				h3{
+					font-family: $font-default;
+					font-size: rem(18);
+					text-transform: uppercase;
+					font-weight: 900;
+				}
+				
+				.info-item{
+					display: flex;
+					align-items: center;
+					width: 90%;
+					margin: rem(30) 0;
+				}
+				
+				.icon{
+					background-color: $primery-color;
+					padding: rem(16);
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					border-radius: 1000px;
+					margin-right: rem(40);
+
+					i {
+						color: $white;
+						font-size: rem(30);
+					}
+				}
+
+				.text{
+					h5, p{
+						margin: 0;
+						font-family: $font-default;
+
+					}
+
+					h5{
+						font-size: rem(18);
+						font-weight: bold;
+					}
+
+					p{
+						color: $gray;
+						margin: rem(6) 0;
+					}
+				}
+				
+			}
+
+			.footer-form{
+				padding: rem(70) 0;
+				min-width: 40%;
+				
+				h3{
+					font-family: $font-default;
+					font-size: rem(18);
+					font-weight: 900;
+					margin-bottom: rem(45);
+				}
+
+				.btn-primery-orange{
+					margin-left: 20%;
+					margin-top: rem(30);
+
+					@include mq('md', max){
+						font-size: rem(16);
+					}
+				}
+			}
+		}	
+	}
+	// Contact Section End
+
+	// Bottom Footer Start
+	.bottom-footer{
+		background-color: $secondry-color;
+		color: $white;
+		text-align: center;
+		padding: rem(35) 0;
+
+		.container{
+			margin: 0 auto;
+
+			p{
+				font-size: rem(17);
+				margin: rem(20) 0;
+			}
+		}
+	}
+	// Bottom Footer End
+}
+//===========================================
+// -Footer end
+//===========================================

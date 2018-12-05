@@ -1,0 +1,156 @@
+
+.we-are-creative-agency {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 80px 0px;
+	.we-are-creative-agency-container {
+		width: 80%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		.purple-div {
+			position: absolute;
+			left: -200px;
+			top: 0px;
+			width: 30%;
+			height: 100%;
+			background-color: #2f2339;
+			z-index: -1;
+		}
+		.creative-box-left {
+			background-color:  #2f2339;
+			min-width: 300px;
+			width: 75%;
+			
+			h1 {
+				padding: 20px;
+				color: $white;
+				font-size: rem(50);
+			}
+			div {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: flex-start;
+				align-items: center;
+				color: $white;
+				
+				.box {
+					margin: 20px;
+					width: 300px;
+					min-width: 275px;
+					max-width: 100%;
+					padding-right: 85px;
+					p {
+						line-height: 30px;
+						font-size: rem(20);
+						span {
+							display: block;
+							padding: 10px 0px;
+						}
+					}
+				}
+			}
+		}
+		.ipad-right {
+			width: 50%;
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			img {
+				margin-left: -120px;
+			}
+		}
+	}
+	@include mq('xl', max)  {
+		display: block;
+		text-align: center;
+		.we-are-creative-agency-container {
+			width: 100%;
+			display: block;
+			.purple-div {
+				position: absolute;
+				left: -200px;
+				top: 0px;
+				width: 100%;
+				height: 50%;
+				z-index: -1;
+			}
+			.creative-box-left {
+				width: 100%;
+				margin: 0 auto;
+				padding-bottom: 150px;
+				div {
+					justify-content: center;
+					.box {
+						width: 40%;
+						padding: 5px;
+					}
+				}
+			}
+			.ipad-right {
+				width: 100%;
+				margin-top: -150px;
+				justify-content: center;
+				img {
+					margin: 5px 0px;
+					height: 350px;
+					width: 300px;
+				}
+			}
+		} 
+	}
+}
+// 
+// start 
+.we-are-creative {
+	margin-top: 150px;
+	background-color: #ee5d30;
+	display: flex;
+	justify-content: center;
+	height: 450px;
+	align-items: center;
+	.we-are-orange-container {
+		width: 80%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		h1 {
+			font-size: rem(50);
+			color: $white;
+			width: 100%;
+			margin: 0px;
+			padding-left: 200px;
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			img {
+				margin-left: 100px;
+				transform: scale(1.1);
+			}
+		}
+	}
+	@include mq('xl', max)  {
+		display: block;
+		text-align: center;
+		.we-are-orange-container {
+			width: 100%;
+			h1 {
+				padding: 10px;
+				flex-direction: column;
+				line-height: 40px;
+				font-size: rem(60);
+				img {
+					margin-top: 30px;
+					height: 300px;
+					margin: 30px;
+					transform: scale(1.0);
+				}
+      }
+      
+      
+      
+		} 
+	}
+}

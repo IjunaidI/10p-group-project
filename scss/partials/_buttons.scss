@@ -1,0 +1,33 @@
+//===========================================
+    // -Buttons start
+//===========================================
+
+.btn {
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  &[disabled], &.disabled{
+    cursor: not-allowed;
+  }
+}
+.btn-primery-purple,.btn-primery-orange,.btn-global{
+  height: rem(68);
+  width: rem(215);
+  font-weight: bold;
+  font-family: $font-primery;
+  font-size: 18px;
+  border: none;
+  color: white;
+}
+
+.btn-primery-orange{
+ background-color: $primery-color;
+}
+
+.btn-primery-purple{
+ background-color: $secondry-color;
+}
+//===========================================
+    // -Buttons end
+//===========================================

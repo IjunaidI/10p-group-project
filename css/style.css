@@ -677,10 +677,11 @@ footer .bottom-footer {
 
 .navbar {
   font-size: 0.9375rem;
-  padding: 0.625rem;
+  padding: 1.25rem;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  font-weight: bold; }
   .navbar .logo {
     text-decoration: none;
     color: black;
@@ -699,7 +700,7 @@ footer .bottom-footer {
       display: flex;
       justify-content: center;
       align-items: center;
-      padding-right: 25px; }
+      padding-right: 1.5625rem; }
 
 .main-nav {
   list-style-type: none;
@@ -709,7 +710,7 @@ footer .bottom-footer {
     color: black; }
   .main-nav li {
     font-family: "Lato", sans-serif;
-    padding: 0px 10px;
+    padding: 0rem 0.625rem;
     font-size: 1.125rem; }
 
 @media (max-width: 991px) {
@@ -717,12 +718,11 @@ footer .bottom-footer {
     display: flex;
     justify-content: space-between;
     padding-bottom: 0;
-    height: 70px;
     align-items: center; }
     .navbar i {
       display: block; }
     .navbar .logo img {
-      width: 100px; }
+      width: 6.25rem; }
 
   .main-nav {
     display: none; }

@@ -543,7 +543,6 @@ html, body {
   .about-company .text {
     background-color: #2f2339;
     width: 60%;
-    height: 51.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -672,62 +671,55 @@ footer .bottom-footer {
 
 .navbar {
   font-size: 0.9375rem;
-  padding-bottom: 0.625rem;
-  height: 6.6875rem; }
+  padding: 0.625rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
   .navbar .logo {
     text-decoration: none;
     color: black;
-    display: inline-block;
-    font-size: 22px;
-    margin-top: 10px;
-    margin-left: 20px; }
+    display: inline-block; }
+  .navbar i {
+    display: none;
+    font-size: 1.5625rem; }
 
-.icons i {
-  color: black;
-  font-size: 20px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  padding-right: 32px; }
-.icons a {
-  text-decoration: none; }
+.icons {
+  display: flex; }
+  .icons a {
+    text-decoration: none; }
+    .icons a i {
+      color: black;
+      font-size: 1.125rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-right: 25px; }
 
 .main-nav {
   list-style-type: none;
-  display: none; }
+  display: flex; }
   .main-nav .nav-links {
     text-decoration: none;
     color: black; }
-    .main-nav .nav-links li {
-      text-align: center;
-      display: flex;
-      justify-content: flex-end;
-      font-family: "Lato", sans-serif; }
+  .main-nav li {
+    font-family: "Lato", sans-serif;
+    padding: 0px 10px;
+    font-size: 1.125rem; }
 
-.navbar-toggle {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  cursor: pointer;
-  color: black;
-  font-size: 24px; }
-
-.active {
-  display: block; }
-
-@media screen and (min-width: 992px) {
+@media (max-width: 991px) {
   .navbar {
     display: flex;
     justify-content: space-between;
     padding-bottom: 0;
     height: 70px;
     align-items: center; }
+    .navbar i {
+      display: block; }
+    .navbar .logo img {
+      width: 100px; }
 
   .main-nav {
-    display: flex;
-    margin-right: 30px;
-    flex-direction: row;
-    justify-content: flex-end; }
+    display: none; }
 
   .main-nav li {
     margin: 0; }

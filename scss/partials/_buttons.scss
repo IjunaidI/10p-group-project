@@ -19,6 +19,9 @@
   font-size: 18px;
   border: none;
   color: white;
+  @include mq('md', max){
+   width:rem(280);
+}
 }
 .btn-primery-orange{
  background-color: $primery-color;

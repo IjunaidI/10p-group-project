@@ -3,89 +3,100 @@
 //===========================================
 .navbar {
 	font-size: rem(15);
-	padding-bottom: rem(10);
-	height: rem(107);
-	.nav-links,
+	padding: rem(10);
+	// height: rem(107);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	.logo {
 		text-decoration: none;
 		color: black;
 		display: inline-block;
-		font-size: 22px;
-		margin-top: 10px;
-		margin-left: 20px;
+		// font-size: 22px;
+		// margin-top: 10px;
+		// margin-left: 20px;
+		// margin-right: auto;
 	}
-	.main-nav {
-		list-style-type: none;
+	i {
 		display: none;
-		li {
-			text-align: center;
-			display: flex;
-			justify-content: flex-end;
-			font-family: $font-default;
-		}
+		font-size: rem(25);
 	}
-	.icons{
+}
+.icons{
+	display: flex;
+	a{
+		text-decoration: none;
 		i{
 			color: black;
-			font-size: 20px;
-			display: inline-flex;
+			font-size: rem(18);
+			display: flex;
 			justify-content: center;
 			align-items: center;
-			padding-right: 32px;
-		}
-		a{
-			text-decoration: none;
+			padding-right: 25px;
 		}
 	}
 }
-
-.navbar-toggle {
-	position: absolute;
-	top: 10px;
-	right: 20px;
-	cursor: pointer;
-	color: black;
-	font-size: 24px;
+.main-nav {
+	list-style-type: none;
+	display: flex;
+	.nav-links{
+		text-decoration: none;
+		color: black;
+	}
+	li {
+		// text-align: center;
+		// display: flex;
+		// justify-content: flex-end;
+		font-family: $font-default;
+		padding: 0px 10px;
+		font-size: rem(18); 
+	}
+	
 }
 
-.active {
-	display: block;
-}
-
-@include mq-only('xs', 'lg'){
+@include mq("lg", max){
 	.navbar {
 		display: flex;
 		justify-content: space-between;
 		padding-bottom: 0;
-		height: rem(107);
+		height: 70px;
 		align-items: center;
-		.main-nav {
-			display: flex;
-			margin-right: 30px;
-			flex-direction: row;
-			justify-content: flex-end;
-			li {
-				margin: 0;
-			}
-			.nav-links {
-				margin-left: 40px;
-			}
-			.logo {
-				margin-top: 0;
-			}
-			
-			.navbar-toggle {
-				display: none;
-			}
-			
-			.logo:hover,
-			.nav-links:hover {
-				color: $primery-color;
+		i {
+			display: block;
+		}
+		.logo {
+			img {
+				width: 100px;
 			}
 		}
-		
+
+	}	
+	.main-nav{
+		display: none;
 	}
+	.main-nav li {
+		margin: 0;
+	}
+	
+	.nav-links {
+		margin-left: 40px;
+	}
+	
+	.logo {
+		margin-top: 0;
+	}
+	
+	.navbar-toggle {
+		display: none;
+	}
+	
+	.logo:hover,
+	.nav-links:hover {
+		color: $primery-color;
+	}
+
 }
+
 //===========================================
 // -Navbar end
 //===========================================

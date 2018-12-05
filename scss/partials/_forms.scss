@@ -2,38 +2,7 @@
     // -Forms Start
 //===========================================
 
-.footer-form-area {
-    .form-item{
-        margin: rem(16) 0;
-        display: flex;
-        align-items: flex-start;
 
-        label{
-            display: inline-block;
-            width: 20%;
-            font-family: $font-default;
-            font-size: rem(17);
-            color: $gray;
-            font-weight: 400;
-        }
-
-        input, textarea{
-            border: none;
-            border-bottom: 2px solid #cacaca;
-            width: 70%;
-            padding: rem(6);
-            color: $gray;
-
-            &:focus{
-                outline: none;
-            }
-        }
-
-        textarea{
-            resize: none;
-        }
-    }
-}
 //===========================================
     // -Forms end
 //===========================================

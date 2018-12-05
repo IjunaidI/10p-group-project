@@ -1,0 +1,24 @@
+.showcase-box{
+    display: flex;
+}
+.showcase-images{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    img{
+        width: rem(282);
+        height: rem(188);
+    }
+}
+.showcase-description{
+    width: 50%;
+.showcase-detail{
+    h1{
+        font-family: $font-primery;
+        font-weight: 600;
+        font-size: rem(51);
+        color: white;
+        margin: rem(11) 0;
+    }
+}
+}

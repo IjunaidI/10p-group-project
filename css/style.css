@@ -546,7 +546,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-right: 21rem; }
+    padding: 100px 40px 100px 0px; }
     @media (max-width: 575px) {
       .about-company .text {
         width: 80%;
@@ -717,7 +717,7 @@ footer .bottom-footer {
   .navbar {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 0;
+    padding-bottom: 10px;
     align-items: center; }
     .navbar i {
       display: block; }

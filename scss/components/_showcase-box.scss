@@ -65,3 +65,37 @@
     }
 }
 }
+@include mq('lg',max){
+    .showcase-description{
+        width: 100%;
+        flex: none;
+        justify-content: center;
+        align-items: center;
+        .showcase-description-container{
+            width: 100%;
+            margin-left: 0;;
+            .showcase-detail{
+                width: 100%;
+                margin: 12px 0;
+                .headings,.showcase-details{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    button{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+    .showcase-box{
+        .showcase-images{
+            .showcase-images-container{
+                justify-content: center;
+            }
+        }
+
+    }
+
+}

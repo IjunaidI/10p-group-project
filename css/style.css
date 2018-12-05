@@ -614,6 +614,9 @@ footer .contact .container {
   footer .contact .container .contact-info {
     padding: 4.375rem 0;
     min-width: 35%; }
+    @media (max-width: 575px) {
+      footer .contact .container .contact-info {
+        width: 100%; } }
     footer .contact .container .contact-info h3 {
       font-family: "Lato", sans-serif;
       font-size: 1.125rem;
@@ -647,6 +650,9 @@ footer .contact .container {
   footer .contact .container .footer-form {
     padding: 4.375rem 0;
     min-width: 40%; }
+    @media (max-width: 575px) {
+      footer .contact .container .footer-form {
+        width: 100%; } }
     footer .contact .container .footer-form h3 {
       font-family: "Lato", sans-serif;
       font-size: 1.125rem;
@@ -783,6 +789,18 @@ footer .bottom-footer {
     .product-details .product-descriptions p {
       font-size: 18px; }
 
+@media (max-width: 991px) {
+  .product-box {
+    flex-wrap: wrap; }
+    .product-box .product-image {
+      justify-content: center;
+      flex-basis: 685px;
+      height: 100%;
+      align-items: normal; }
+      .product-box .product-image img {
+        margin: 50px 0 -50px 0; }
+    .product-box .product-details {
+      flex-basis: 660px; } }
 .showcase-box {
   display: flex;
   flex-wrap: wrap; }
@@ -835,6 +853,28 @@ footer .bottom-footer {
       line-height: 30px;
       font-size: 18px; }
 
+@media (max-width: 991px) {
+  .showcase-description {
+    width: 100%;
+    flex: none;
+    justify-content: center;
+    align-items: center; }
+    .showcase-description .showcase-description-container {
+      width: 100%;
+      margin-left: 0; }
+      .showcase-description .showcase-description-container .showcase-detail {
+        width: 100%;
+        margin: 12px 0; }
+        .showcase-description .showcase-description-container .showcase-detail .headings, .showcase-description .showcase-description-container .showcase-detail .showcase-details {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center; }
+          .showcase-description .showcase-description-container .showcase-detail .headings button, .showcase-description .showcase-description-container .showcase-detail .showcase-details button {
+            font-size: 12px; }
+
+  .showcase-box .showcase-images .showcase-images-container {
+    justify-content: center; } }
 .we-are-creative-agency {
   display: flex;
   justify-content: center;

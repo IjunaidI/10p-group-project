@@ -64,7 +64,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-    padding-right: rem(336);
+		padding: 100px 40px 100px 0px;
     @include mq(sm, max){
       width: 80%;
       padding-right: 1rem;

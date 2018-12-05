@@ -57,6 +57,10 @@ footer{
 			.contact-info{
 				padding: rem(70) 0;
 				min-width: 35%;
+
+				@include mq('sm', max){
+					width: 100%;
+				}
 				
 				h3{
 					font-family: $font-default;
@@ -110,6 +114,10 @@ footer{
 			.footer-form{
 				padding: rem(70) 0;
 				min-width: 40%;
+
+				@include mq('sm', max){
+					width: 100%;
+				}
 				
 				h3{
 					font-family: $font-default;

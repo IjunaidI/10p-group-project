@@ -53,3 +53,20 @@
         }
     }
 }
+@include mq('lg',max){
+    .product-box{
+        flex-wrap: wrap;
+        .product-image{
+            justify-content: center;
+            flex-basis: 685px;
+            height: 100%;
+            align-items: normal;
+            img{
+               margin: 50px 0 -50px 0;
+            }
+        }
+        .product-details{
+            flex-basis: 660px;
+        }
+    }
+}

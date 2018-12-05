@@ -9,13 +9,12 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
   crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js"></script>
   <title>Group Prject</title>
 </head>
 
 <body>
-	<nav class="navbar container">
 
+	<nav class="navbar container">
 		<a href="#" class="logo"><img src="images/header-logo.png" alt="header-logo"></a>
 		<div class="icons">
 			<a href="#"><i class="icon-social"></i></a>
@@ -43,8 +42,19 @@
 				<a href="#" class="nav-links">Contact Us</a>
 			</li>
     </ul>
-    <i class="fas fa-bars"></i>
-	</nav>
+  <div id="mySidenav" class="sidenav">
+      <a href="#" onclick="closeNav()"><i class="fas fa-undo closebtn" "></i></a>
+      <div class="links">
+        <a href="#">HOME</a>
+        <a href="#">SERVICES</a>
+        <a href="#">ABOUT</a>
+        <a href="#">REVIEWS</a>
+        <a href="#">LOCATION</a>
+        <a href="#">CONTACT</a>
+      </div>
+    </div>
+    <span class="fas fa-bars open-nav" onclick="openNav()"></span> 
+  </nav>
 	<header>
 		<div class="banner">
 			<div class="layout">
@@ -120,8 +130,6 @@
 	</div>
 
 	</div>
-
-	<!--  -->
 	<div class="we-are-creative-agency">
 		<div class="we-are-creative-agency-container">
 			<div class="purple-div"></div>
@@ -156,11 +164,7 @@
 		<div class="we-are-orange-container">
 			<h1>WE ARE <br> CREATIVE <img src="./images/watch.png" alt=""></h1>
 		</div>
-	</div>
-	<!--  -->
-
-	
-	<!-- junaid -->
+  </div>
 	<div class="product-box">
 		<div class="product-image">
 			<img src="images/Iphone.png" alt="">
@@ -235,9 +239,6 @@
 			</div>
 		</div>
 	</div>
-
-	<!-- hadia -->
-	<!-- Footer Start -->
 	<footer>
 		<!-- Thanks Greeting Start -->
 		<div class="thanks-greeting">
@@ -340,8 +341,8 @@
 		</div>
 		<!-- Bottom Footer End -->
 	</footer>
-	<!-- Footer End -->
-	<!-- hadia -->
+  <!-- Footer End -->
+  <script src="js/script.js"></script>
 </body>
 
 </html>

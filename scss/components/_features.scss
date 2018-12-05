@@ -60,20 +60,7 @@
 			justify-content: center;
 		}
 		
-		.bg{
-			background-color: $primery-color;
-			position: absolute;
-			top: 0;
-			left: 0;
-			z-index: -1;
-			width: 90%;
-			height: 50%;
-			display: none;
-			
-			@include mq('sm', max){
-				display: block;
-			}
-		}
+
 		
 		.logo-image {
 			display: flex;
@@ -108,6 +95,20 @@
 					img {
 						height: 40px;
 						width: 40px;
+					}
+				}
+				.bg{
+					background-color: $primery-color;
+					position: absolute;
+					top: 0;
+					left: 0;
+					z-index: -1;
+					width: 90%;
+					height: 50%;
+					display: none;
+					
+					@include mq('sm', max){
+						display: block;
 					}
 				}
 			}

@@ -2,7 +2,7 @@
     // -Forms Start
 //===========================================
 
-.footer-form-area {
+.form-control {
     .form-item{
         margin: rem(16) 0;
         display: flex;
@@ -31,6 +31,7 @@
 
         textarea{
             resize: none;
+            
         }
     }
 }

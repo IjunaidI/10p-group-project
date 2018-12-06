@@ -24,8 +24,7 @@
       max-width: 100%;
       margin-left: 26px;
       text-align: left;
-      padding-right: 0px;
-     margin-right: 0px; 
+      margin-right: 0px; 
     }
 		h1{
 			color: white;
@@ -61,18 +60,16 @@
 	.text{
 		background-color: #2f2339;
 		width:60%;
-		height: rem(824);
 		display: flex;
 		justify-content: center;
 		align-items: center;
-    padding-right: rem(336);
+		padding: 100px 40px 100px 0px;
     @include mq(sm, max){
       width: 80%;
       padding-right: 1rem;
     }
 		.ab-content{
 			width: rem(574);
-      margin-left: rem(186);
       @include mq('sm', max){
         margin-left: 22px;
       }

@@ -2,22 +2,16 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Montserrat:300,400,600,700" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-	 crossorigin="anonymous">
-	<link rel="stylesheet" href="css/style.css">
-	<script src="js/script.js"></script>
-	<title>Group Prject</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Group Prject</title>
 </head>
 
 <body>
+
 	<nav class="navbar container">
-		<span class="navbar-toggle" id="js-navbar-toggle">
-			<i class="fas fa-bars"></i>
-		</span>
 		<a href="#" class="logo"><img src="images/header-logo.png" alt="header-logo"></a>
 		<div class="icons">
 			<a href="#"><i class="icon-social"></i></a>
@@ -44,8 +38,20 @@
 			<li>
 				<a href="#" class="nav-links">Contact Us</a>
 			</li>
-		</ul>
-	</nav>
+    </ul>
+  <div id="mySidenav" class="sidenav">
+      <a href="#" onclick="closeNav()"><i class="fas fa-undo closebtn" "></i></a>
+      <div class="links">
+        <a href="#">HOME</a>
+        <a href="#">SERVICES</a>
+        <a href="#">ABOUT</a>
+        <a href="#">REVIEWS</a>
+        <a href="#">LOCATION</a>
+        <a href="#">CONTACT</a>
+      </div>
+    </div>
+    <span class="fas fa-bars open-nav" onclick="openNav()"></span> 
+  </nav>
 	<header>
 		<div class="banner">
 			<div class="layout">
@@ -60,9 +66,6 @@
 		</div>
 	</header>
 	<div class="about-company">
-		<div class="side-image">
-			<a href="#"><img src="images/banner-image.png" alt=""></a>
-		</div>
 		<div class="text">
 			<div class="ab-content">
 				<h1>WE ARE CREATIVE AGENCY</h1>
@@ -93,7 +96,8 @@
 				<p>It is a long established fact that a reader will be distracted
 					by the readable content of a page
 					Lorem Ipsum is that it has a more-or-less normal
-					distribution </p>
+          distribution </p>
+          <div class="bg"></div>
 			</div>
 			<div class="logo-1">
 				<div class="logo-image">
@@ -103,7 +107,8 @@
 				<p>It is a long established fact that a reader will be distracted
 					by the readable content of a page
 					Lorem Ipsum is that it has a more-or-less normal
-					distribution </p>
+          distribution </p>
+          <div class="bg"></div>
 			</div>
 			<div class="logo-1">
 				<div class="logo-image">
@@ -113,16 +118,15 @@
 				<p>It is a long established fact that a reader will be distracted
 					by the readable content of a page
 					Lorem Ipsum is that it has a more-or-less normal
-					distribution </p>
+          distribution </p>
+          <div class="bg"></div>
 			</div>
+      <div class="feature-bg"></div>
 		</div>
 
-		<div class="feature-bg"></div>
 	</div>
 
 	</div>
-
-	<!--  -->
 	<div class="we-are-creative-agency">
 		<div class="we-are-creative-agency-container">
 			<div class="purple-div"></div>
@@ -157,11 +161,7 @@
 		<div class="we-are-orange-container">
 			<h1>WE ARE <br> CREATIVE <img src="./images/watch.png" alt=""></h1>
 		</div>
-	</div>
-	<!--  -->
-
-	
-	<!-- junaid -->
+  </div>
 	<div class="product-box">
 		<div class="product-image">
 			<img src="images/Iphone.png" alt="">
@@ -237,7 +237,6 @@
 		</div>
 	</div>
 
-	<!-- hadia -->
 	<!-- Footer Start -->
 	<footer>
 		<!-- Thanks Greeting Start -->
@@ -303,7 +302,7 @@
 					<h3>SAY HELLO !</h3>
 
 					<!-- styling in form file -->
-					<form class="footer-form-area">
+					<form class="form-control">
 						<div class="form-item">
 							<label>Name</label>
 							<input type="text">
@@ -341,8 +340,8 @@
 		</div>
 		<!-- Bottom Footer End -->
 	</footer>
-	<!-- Footer End -->
-	<!-- hadia -->
+  <!-- Footer End -->
+  <script src="js/script.js"></script>
 </body>
 
 </html>

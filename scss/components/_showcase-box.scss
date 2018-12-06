@@ -21,8 +21,8 @@
             font-family: $font-default;
         }
         p{
-            line-height: 30px;
-            font-size: 18px;
+            line-height: rem(30);
+            font-size:  rem(18);
         }
     }
 
@@ -40,7 +40,7 @@
         height: 100%;
         align-items: center;
         justify-content: center;
-        margin-left: 12px;
+        margin-left: rem(12);
     }
 .showcase-detail{
     width: rem(380);
@@ -58,8 +58,8 @@
             font-family: $font-default;
         }
         p{
-            line-height: 30px;
-            font-size: 18px;
+            line-height: rem(30);
+            font-size: rem(18);
         }
         
     }
@@ -73,16 +73,17 @@
         align-items: center;
         .showcase-description-container{
             width: 100%;
+            margin-left: 0;;
             .showcase-detail{
                 width: 100%;
-                margin: 12px 0;
+                margin: rem(12) 0;
                 .headings,.showcase-details{
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     text-align: center;
                     button{
-                        font-size: 12px;
+                        font-size: rem(12);
                     }
                 }
             }
@@ -92,6 +93,9 @@
         .showcase-images{
             .showcase-images-container{
                 justify-content: center;
+                .showcase-image{
+                    text-align: center;
+                }
             }
         }
 

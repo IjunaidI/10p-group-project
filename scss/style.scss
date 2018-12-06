@@ -1,28 +1,28 @@
 //===========================================
-    // -Helpers Start
+// -Helpers Start
 //===========================================
 
 @import 'helpers/_variables';
 @import 'helpers/_mixins';
 
 //===========================================
-    // -Helpers End
+// -Helpers End
 //===========================================
 
 
 //===========================================
-    // -Vendors Start
+// -Vendors Start
 //===========================================
 
 @import 'vendors/_normalize';
 
 //===========================================
-    // -Vendors End
+// -Vendors End
 //===========================================
 
 
 //===========================================
-    // -Partials Start
+// -Partials Start
 //===========================================
 
 @import 'partials/_fonts';
@@ -33,31 +33,33 @@
 @import 'partials/_font-icons';
 
 //===========================================
-    // -Partials End
+// -Partials End
 //===========================================
 
 
 //===========================================
-    // -components Start
+// -components Start
 //===========================================
 
 @import 'components/_header';
 @import 'components/_footer';
 @import 'components/_navbar';
+@import 'components/_product-box';
+@import 'components/_showcase-box';
 @import 'components/_creative-boxes';
 @import 'components/_features';
 
 //===========================================
-    // -components End
+// -components End
 //===========================================
 
 
 //===========================================
-    // -Pages Start
+// -Pages Start
 //===========================================
 
 @import 'pages/_home';
 
 //===========================================
-    // -Pages End
+// -Pages End
 //===========================================

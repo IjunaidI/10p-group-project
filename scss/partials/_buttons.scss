@@ -12,8 +12,7 @@
   }
 }
 .btn-primery-purple,.btn-primery-orange,.btn-global{
-  height: rem(68);
-  width: rem(215);
+  padding: 22px 40px;
   font-weight: bold;
   font-family: $font-primery;
   font-size: 18px;
@@ -22,6 +21,10 @@
   @include mq('md', max){
    width:rem(280);
 }
+}
+.btn-primery-orange:hover,.btn-primery-purple:hover,.btn-global:hover{
+  background-color: $gray;
+  color: white;
 }
 .btn-primery-orange{
  background-color: $primery-color;

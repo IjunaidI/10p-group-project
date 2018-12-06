@@ -2,134 +2,136 @@
 // -Navbar start
 //===========================================
 .navbar {
-	font-size: rem(15);
-	padding: rem(5);
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	font-weight: bold;
-	position: sticky;
-	top: 0;
-	bottom: 0;
-	background-color: white;
-	z-index: 100;
-	.logo {
-		text-decoration: none;
-		color: black;
-		display: inline-block;
-	}
+    font-size: rem(15);
+    padding: rem(5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    background-color: white;
+    z-index: 100;
+    .logo {
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+    }
 }
-.icons{
-	display: flex;
-	a{
-		text-decoration: none;
-		i{
-			color: black;
-			font-size: rem(18);
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			padding-right: rem(25);
-			&:hover {
-				color:#ee5d30;;
-			}
-		}
-	}
+
+.icons {
+    display: flex;
+    a {
+        text-decoration: none;
+        i {
+            color: black;
+            font-size: rem(18);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right: rem(25);
+            &:hover {
+                color: #ee5d30;
+                ;
+            }
+        }
+    }
 }
+
 .main-nav {
-	list-style-type: none;
-	display: flex;
-	.nav-links{
-		text-decoration: none;
-		color: black;
-		&:hover {
-			color:#ee5d30;
-		}
-	}
-	li {
-		font-family: $font-default;
-		padding: rem(0) rem(10);
-		font-size: rem(18); 
-	}
-	
+    list-style-type: none;
+    display: flex;
+    .nav-links {
+        text-decoration: none;
+        color: black;
+        &:hover {
+            color: #ee5d30;
+        }
+    }
+    li {
+        font-family: $font-default;
+        padding: rem(0) rem(10);
+        font-size: rem(18);
+    }
 }
 
-@include mq("lg", max){
-	.navbar {
-		display: flex;
-		justify-content: space-between;
-		padding-bottom: rem(10);
-		align-items: center;
-		i {
-			display: block;
-		}
-		.logo {
-			img {
-				width: rem(160);
-			}
-		}
-		
-	}	
-	.main-nav{
-		display: none;
-		.nav-links {
-			margin-left: rem(40);
-			li {
-				margin: 0;
-			}
-		}
-	}
+@include mq("lg", max) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: rem(10);
+        align-items: center;
+        i {
+            display: block;
+        }
+        .logo {
+            img {
+                width: rem(160);
+            }
+        }
+    }
+    .main-nav {
+        display: none;
+        .nav-links {
+            margin-left: rem(40);
+            li {
+                margin: 0;
+            }
+        }
+    }
 }
+
 .openbtn {
-	font-size: rem(18);
-	.closebtn{
-		font-size: rem(30);
-	}
-}
-.openbtn{
-	display: none;
-}
-@include mq-only('xs', 'lg'){
-	.openbtn {
-		display: block;
-		color:black;
-		font-size: rem(20);
-	}
-	.closebtn {
-		color: black;
-		font-size: rem(20);
-		display: flex;
-		justify-content: flex-end;
-	}
+    font-size: rem(18);
+    .closebtn {
+        font-size: rem(30);
+    }
 }
 
+.openbtn {
+    display: none;
+}
+
+@include mq-only('xs', 'lg') {
+    .openbtn {
+        display: block;
+        color: black;
+        font-size: rem(20);
+    }
+    .closebtn {
+        color: black;
+        font-size: rem(20);
+        display: flex;
+        justify-content: flex-end;
+    }
+}
 
 .sidenav {
-	width: 100%;
-	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	background-color: white;
-	visibility: hidden;
-	a {
-		font-size: 15px;
-		color: black;
-		display: block;
-		padding: 20px;
-		text-align: center;
-		text-decoration: none;
-		&:hover{
-			color:#ee5d30;	
-			
-		}	
-		.sidenav .changeIndex {
-			position: absolute;
-			top: 0;
-			font-size: rem(20);
-			margin-left: rem(50);
-		}
-	}
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    visibility: hidden;
+    a {
+        font-size: 15px;
+        color: black;
+        display: block;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        &:hover {
+            color: #ee5d30;
+        }
+        .sidenav .changeIndex {
+            position: absolute;
+            top: 0;
+            font-size: rem(20);
+            margin-left: rem(50);
+        }
+    }
 }
 
 //===========================================

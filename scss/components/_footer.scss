@@ -15,13 +15,6 @@ footer{
 			margin: 0 auto;
 			padding: rem(118) 0;
 			
-			h2{
-				font-size: rem(51);
-				font-weight: 600;
-				margin: rem(33) 0;
-				
-			}
-			
 			h4{
 				font-size: rem(33);
 				font-weight: 600;
@@ -29,15 +22,10 @@ footer{
 			}
 			
 			p{
-				font-family: $font-default;
-				font-size: rem(20);
 				padding: 0 rem(230);
-				font-weight: 300;
 
-				@include mq('sm', max){
-					padding: 0 rem(30);
-					line-height: 1.5;
-					font-size: 14px;
+				@include mq('md', max){
+					padding: 0 rem(100);					
 				}
 			}
 		}
@@ -48,7 +36,6 @@ footer{
 	.contact{
 		
 		.container{
-			margin: 0 auto;
 			display: flex;
 			justify-content: space-around;
 			align-items: flex-start;
@@ -60,6 +47,8 @@ footer{
 
 				@include mq('sm', max){
 					width: 100%;
+					padding: rem(20) 0;
+					padding-top: rem(40);
 				}
 				
 				h3{
@@ -117,6 +106,8 @@ footer{
 
 				@include mq('sm', max){
 					width: 100%;
+					padding: rem(20) 0;
+					padding-bottom: rem(40);
 				}
 				
 				h3{
@@ -126,7 +117,7 @@ footer{
 					margin-bottom: rem(45);
 				}
 
-				.btn-primery-orange{
+				.btn-primary{
 					margin-left: 20%;
 					margin-top: rem(30);
 
@@ -145,6 +136,8 @@ footer{
 		color: $white;
 		text-align: center;
 		padding: rem(35) 0;
+
+		
 
 		.container{
 			margin: 0 auto;

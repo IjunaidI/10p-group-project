@@ -8,35 +8,36 @@
 	display: flex;
 	position: relative;
 	flex-wrap: wrap;
-	justify-content: flex-start;
+	justify-content: space-between;
 	padding-top: rem(85);
 
 
 	.features-head {
 
-		padding-top: rem(0);
-		padding-left: rem(50);
+		padding-top: rem(15);
+		padding-left: rem(20);
 		background: $white;
-		width: 30%;
-		min-width: 200px;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		flex-direction: column;
+		width: 25%;
 
-
-		@include mq('lg', max) {
-			width: 100%;
+		@include mq('xl', max) {
+			width: 100% !important;
 			margin-bottom: rem(16);
-			padding-left: rem(0);
+			padding-right: rem(20);
 			text-align: center;
+			justify-content: center;
 		}
 
 		.features-heading {
 			color: #333333;
 			letter-spacing: 1px;
-			flex-wrap: wrap;
 
-			h1 {
-				font-size: rem(51);
+			.btn {
+				margin-top: rem(20);
 			}
-
 		}
 	}
 
@@ -51,8 +52,8 @@
 
 
 
-		@include mq('lg', max) {
-			width: 80%;
+		@include mq('xl', max) {
+			width: 100%;
 			margin: 0 auto;
 			padding: 0;
 		}
@@ -60,8 +61,6 @@
 		@include mq('sm', max) {
 			justify-content: center;
 		}
-
-
 
 		.logo-image {
 			display: flex;
@@ -75,7 +74,7 @@
 		}
 
 
-		.logo{
+		.logo {
 			padding: 2rem;
 			min-width: calc(100% / 3);
 			position: relative;

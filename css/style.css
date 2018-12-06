@@ -1094,35 +1094,38 @@ footer .bottom-footer {
   display: flex;
   position: relative;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-between;
   padding-top: 5.3125rem; }
   .features .features-head {
-    padding-top: 0rem;
-    padding-left: 3.125rem;
+    padding-top: 0.9375rem;
+    padding-left: 1.25rem;
     background: #fff;
-    width: 30%;
-    min-width: 200px; }
-    @media (max-width: 991px) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 25%; }
+    @media (max-width: 1199px) {
       .features .features-head {
-        width: 100%;
+        width: 100% !important;
         margin-bottom: 1rem;
-        padding-left: 0rem;
-        text-align: center; } }
+        padding-right: 1.25rem;
+        text-align: center;
+        justify-content: center; } }
     .features .features-head .features-heading {
       color: #333333;
-      letter-spacing: 1px;
-      flex-wrap: wrap; }
-      .features .features-head .features-heading h1 {
-        font-size: 3.1875rem; }
+      letter-spacing: 1px; }
+      .features .features-head .features-heading .btn {
+        margin-top: 1.25rem; }
   .features .features-logo {
     display: flex;
     position: relative;
     text-align: left;
     flex-wrap: wrap;
     width: 70%; }
-    @media (max-width: 991px) {
+    @media (max-width: 1199px) {
       .features .features-logo {
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
         padding: 0; } }
     @media (max-width: 575px) {

@@ -1,90 +1,95 @@
-.product-box{
+.product-box {
     display: flex;
     justify-content: flex-end;
 }
-.product-image{
+
+.product-image {
     height: rem(822);
     display: flex;
     align-items: center;
     flex: 1;
     justify-content: flex-end;
     z-index: 2;
-    img{
+    img {
         margin-right: -150px;
     }
 }
-.product-details{
+
+.product-details {
     background-color: $secondry-color;
     flex: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: rem(90);
-    .product-details-container{
+    .product-details-container {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         width: 50%;
         margin-bottom: rem(70);
     }
-    h2{
+    h2 {
         margin: rem(11) 0;
         color: white;
     }
-    .product-descriptions{
+    .product-descriptions {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-top: rem(64);
-        .product-description{
+        .product-description {
             margin-bottom: rem(80);
         }
-        p,h3{
+        p,
+        h3 {
             color: white;
             font-family: $font-default;
         }
-        h3{
+        h3 {
             font-size: rem(24);
         }
-        p{
+        p {
             font-size: rem(18);
         }
     }
 }
-@include mq('lg',max){
-    .product-box{
+
+@include mq('lg', max) {
+    .product-box {
         flex-wrap: wrap;
-        .product-image{
+        .product-image {
             justify-content: center;
             flex-basis: 685px;
             height: 100%;
             align-items: normal;
-            img{
-               margin: 50px 0 -45px 0;
+            img {
+                margin: 50px 0 -45px 0;
             }
         }
-        .product-details{
+        .product-details {
             flex-basis: 660px;
-            .product-details-container{
+            .product-details-container {
                 align-items: center;
                 width: 90%;
-                .headings{
+                .headings {
                     text-align: center;
                 }
-                .product-descriptions{
+                .product-descriptions {
                     text-align: center;
                 }
             }
         }
     }
 }
-@include mq('md',max){
-    .product-box{
+
+@include mq('md', max) {
+    .product-box {
         justify-content: center;
     }
-    .product-image{
+    .product-image {
         max-width: rem(360);
-        img{
+        img {
             width: 100%;
             height: 100%;
         }

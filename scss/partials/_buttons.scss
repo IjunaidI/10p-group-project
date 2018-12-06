@@ -1,36 +1,37 @@
 //===========================================
 // -Buttons start
 //===========================================
-
 .btn {
-  padding: 22px 40px;
-  font-weight: bold;
-  font-family: $font-primery;
-  font-size: 18px;
-  border: none;
-  color: white;
-  @include mq('md', max){
-    padding: 18px 32px;
-  }
-  &[disabled], &.disabled{
-    cursor: not-allowed;
-  }
-  &:hover{
-    background-color: $gray;
+    padding: 22px 40px;
+    font-weight: bold;
+    font-family: $font-primery;
+    font-size: 18px;
+    border: none;
     color: white;
-  }
-
-  @include mq('lg', max){
-    font-size: rem(14);
-  }
+    @include mq('md', max) {
+        padding: 18px 32px;
+    }
+    &[disabled],
+    &.disabled {
+        cursor: not-allowed;
+    }
+    &:hover {
+        background-color: $gray;
+        color: white;
+    }
+    @include mq('lg', max) {
+        font-size: rem(14);
+    }
 }
 
-.btn-primary{
-  background-color: $primery-color;
+.btn-primary {
+    background-color: $primery-color;
 }
-.btn-secondry{
-  background-color: $secondry-color;
+
+.btn-secondry {
+    background-color: $secondry-color;
 }
+
 //===========================================
 // -Buttons end
 //===========================================

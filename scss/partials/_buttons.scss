@@ -20,6 +20,9 @@
     color: white;
   }
 
+  @include mq('lg', max){
+    font-size: rem(14);
+  }
 }
 
 .btn-primary{

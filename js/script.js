@@ -1,10 +1,14 @@
 
 function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("mySidenav").style.visibility = 'visible';
     document.querySelector('body').style.position = 'fixed';
+    document.querySelector('.sidenav').classList.remove('slideOutRight');
+    document.querySelector('.sidenav').classList.add('slideInRight');
 }
 
 function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
+    document.querySelector('.sidenav').classList.remove('slideInRight');
+    document.querySelector('.sidenav').classList.add('slideOutRight');
     document.querySelector('body').style.position = 'relative';
+    document.getElementById("mySidenav").style.visibility = 'hidden';
 }

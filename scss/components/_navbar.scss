@@ -3,11 +3,16 @@
 //===========================================
 .navbar {
 	font-size: rem(15);
-	padding: rem(20);
+	padding: rem(5);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	font-weight: bold;
+	position: sticky;
+	top: 0;
+	bottom: 0;
+	background-color: white;
+	z-index: 100;
 	.logo {
 		text-decoration: none;
 		color: black;
@@ -38,7 +43,7 @@
 		text-decoration: none;
 		color: black;
 		&:hover {
-			color:#ee5d30;;
+			color:#ee5d30;
 		}
 	}
 	li {
@@ -66,63 +71,65 @@
 		
 	}	
 	.main-nav{
-    display: none;
-    .nav-links {
-      margin-left: rem(40);
-      li {
-        margin: 0;
-      }
-    }
+		display: none;
+		.nav-links {
+			margin-left: rem(40);
+			li {
+				margin: 0;
+			}
+		}
 	}
 }
-.open-nav {
+.openbtn {
 	font-size: rem(18);
 	.closebtn{
 		font-size: rem(30);
 	}
 }
-.fa-bars {
+.openbtn{
 	display: none;
-  color:black;
 }
 @include mq-only('xs', 'lg'){
-	.fa-bars {
+	.openbtn {
 		display: block;
-    color:black;
-    font-size: rem(35);
+		color:black;
+		font-size: rem(20);
 	}
-	.fas.fa-undo {
+	.closebtn {
 		color: black;
 		font-size: rem(20);
 		display: flex;
 		justify-content: flex-end;
 	}
 }
+
+
 .sidenav {
-	height: 100%;
-	width: 0;
+	width: 100%;
 	position: fixed;
 	top: 0;
 	right: 0;
+	bottom: 0;
 	background-color: white;
+	visibility: hidden;
 	a {
-    font-size: 15px;
-    color: black;
-    transition: 0.3s;
-    display: block;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
+		font-size: 15px;
+		color: black;
+		display: block;
+		padding: 20px;
+		text-align: center;
+		text-decoration: none;
+		&:hover{
+			color:#ee5d30;	
+			
+		}	
+		.sidenav .changeIndex {
+			position: absolute;
+			top: 0;
+			font-size: rem(20);
+			margin-left: rem(50);
+		}
 	}
-	.sidenav .changeIndex {
-		position: absolute;
-		top: 0;
-		font-size: rem(20);
-		margin-left: rem(50);
-	}
-}
-.sidenav a:hover {
-	color:#ee5d30;;
 }
 
 //===========================================

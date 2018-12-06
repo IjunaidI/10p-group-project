@@ -17,15 +17,16 @@
 		align-items: center;
 	}
 	.header-content{
-		max-width:rem(700);
-		padding-right: rem(236);
-    margin-right: rem(200);
-    @include mq('sm', max){
-      max-width: 100%;
-      margin-left: 26px;
-      text-align: left;
-      margin-right: 0px; 
-    }
+		max-width: 27%;
+    margin-right: 25.5rem;
+    @include mq('lg', max){
+			max-width: 50%;
+			margin: 0 auto;
+		}
+		@include mq('sm', max){
+			max-width: 80%;
+			margin: 0 auto;
+		}
 		h1{
 			color: white;
 			font-size:rem(100);
@@ -63,7 +64,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		padding: 100px 40px 100px 0px;
+		padding: 100px 20px 100px 0px;
     @include mq(sm, max){
       width: 80%;
       padding-right: 1rem;

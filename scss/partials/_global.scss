@@ -26,6 +26,56 @@ html, body {
   width: 80%;
   margin: 0 auto;
 }
+.primary-p{
+   font-family: $font-default;
+   font-size: rem(18);
+   @include mq('sm', max) {
+    font-size: 10px;
+  }
+	@include mq('md', max) {
+    font-size: 12px;
+  }
+	@include mq('lg', max) {
+    font-size: 14px;
+  }
+  @include mq('xl', max) {
+    font-size: 16px;
+  }
+}
+.default-h1{
+  font-family: $font-primery;
+  font-weight: 600;
+  font-size: rem(130);
+  @include mq('sm', max) {
+    font-size: rem(51);
+  }
+	@include mq('md', max) {
+    font-size:rem(68);
+  }
+	@include mq('lg', max) {
+    font-size: rem(78);
+  }
+  @include mq('xl', max) {
+    font-size: rem(102);
+  }
+}
+.primary-h2{
+  font-family: $font-primery;
+  font-weight: 600;
+  font-size: rem(52);
+  @include mq('sm', max) {
+    font-size: rem(36);
+  }
+	@include mq('md', max) {
+    font-size:rem(38);
+  }
+	@include mq('lg', max) {
+    font-size: rem(46);
+  }
+  @include mq('xl', max) {
+    font-size: rem(52);
+  }
+}
 //=======================================================
 	// -Global style  end
 //=======================================================

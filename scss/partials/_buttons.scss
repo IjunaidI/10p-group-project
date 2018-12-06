@@ -15,15 +15,17 @@
   &[disabled], &.disabled{
     cursor: not-allowed;
   }
+  &:hover{
+    background-color: $gray;
+    color: white;
+  }
+
 }
-.btn:hover{
-  background-color: $gray;
-  color: white;
-}
-.btn-orange{
+
+.btn-primary{
  background-color: $primery-color;
 }
-.btn-purple{
+.btn-secondry{
  background-color: $secondry-color;
 }
 //===========================================

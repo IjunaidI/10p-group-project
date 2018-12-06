@@ -734,22 +734,21 @@ footer .bottom-footer {
       margin-left: 2.5rem; }
       .main-nav .nav-links li {
         margin: 0; } }
-.open-nav {
+.openbtn {
   font-size: 1.125rem; }
-  .open-nav .closebtn {
+  .openbtn .closebtn {
     font-size: 1.875rem; }
 
-.fa-bars {
-  display: none;
-  color: black; }
+.openbtn {
+  display: none; }
 
 @media (min-width: 0) and (max-width: 991px) {
-  .fa-bars {
+  .openbtn {
     display: block;
     color: black;
-    font-size: 2.1875rem; }
+    font-size: 1.25rem; }
 
-  .fas.fa-undo {
+  .closebtn {
     color: black;
     font-size: 1.25rem;
     display: flex;
@@ -771,8 +770,6 @@ footer .bottom-footer {
     text-decoration: none; }
     .sidenav a:hover {
       color: #ee5d30; }
-    .sidenav a:active {
-      border-bottom: 1px solid #ee5d30; }
     .sidenav a .sidenav .changeIndex {
       position: absolute;
       top: 0;

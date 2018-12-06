@@ -80,23 +80,22 @@
 		}
 	}
 }
-.open-nav {
+.openbtn {
 	font-size: rem(18);
 	.closebtn{
 		font-size: rem(30);
 	}
 }
-.fa-bars {
+.openbtn{
 	display: none;
-	color:black;
 }
 @include mq-only('xs', 'lg'){
-	.fa-bars {
+	.openbtn {
 		display: block;
 		color:black;
-		font-size: rem(35);
+		font-size: rem(20);
 	}
-	.fas.fa-undo {
+	.closebtn {
 		color: black;
 		font-size: rem(20);
 		display: flex;
@@ -118,12 +117,9 @@
 		padding: 20px;
 		text-align: center;
 		text-decoration: none;
-	    &:hover{
+		&:hover{
 			color:#ee5d30;	
 			
-		}
-		&:active{
-			border-bottom: 1px solid #ee5d30;
 		}	
 		.sidenav .changeIndex {
 			position: absolute;
@@ -133,7 +129,7 @@
 		}
 	}
 }
-	
-	//===========================================
-	// -Navbar end
-	//===========================================
+
+//===========================================
+// -Navbar end
+//===========================================

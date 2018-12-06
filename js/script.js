@@ -4,6 +4,8 @@ function openNav() {
     document.querySelector('body').style.position = 'fixed';
     document.querySelector('.sidenav').classList.remove('slideOutRight');
     document.querySelector('.sidenav').classList.add('slideInRight');
+    document.querySelector('.links-items').classList.add('active-border'); 
+
 }
 
 function closeNav() {

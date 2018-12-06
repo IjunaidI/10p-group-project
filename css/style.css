@@ -15,6 +15,7 @@
  * 3. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
  *  `em` units.
  */
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700|Montserrat:300,400,600,700");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -377,29 +378,25 @@ th {
   margin: 0; }
 
 .btn {
-  font-weight: bold;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 5px; }
-  .btn[disabled], .btn.disabled {
-    cursor: not-allowed; }
-
-.btn-primery-purple, .btn-primery-orange, .btn-global {
-  height: 4.25rem;
-  width: 13.4375rem;
+  padding: 22px 40px;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   border: none;
   color: white; }
   @media (max-width: 767px) {
-    .btn-primery-purple, .btn-primery-orange, .btn-global {
-      width: 17.5rem; } }
+    .btn {
+      padding: 18px 32px; } }
+  .btn[disabled], .btn.disabled {
+    cursor: not-allowed; }
+  .btn:hover {
+    background-color: #585858;
+    color: white; }
 
-.btn-primery-orange {
+.btn-primary {
   background-color: #ee5d30; }
 
-.btn-primery-purple {
+.btn-secondry {
   background-color: #2f2339; }
 
 .footer-form-area .form-item {
@@ -443,6 +440,56 @@ html, body {
 .container {
   width: 80%;
   margin: 0 auto; }
+
+.primary-p {
+  font-family: "Lato", sans-serif;
+  font-size: 1.125rem; }
+  @media (max-width: 575px) {
+    .primary-p {
+      font-size: 10px; } }
+  @media (max-width: 767px) {
+    .primary-p {
+      font-size: 12px; } }
+  @media (max-width: 991px) {
+    .primary-p {
+      font-size: 14px; } }
+  @media (max-width: 1199px) {
+    .primary-p {
+      font-size: 16px; } }
+
+.default-h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 8.125rem; }
+  @media (max-width: 575px) {
+    .default-h1 {
+      font-size: 3.1875rem; } }
+  @media (max-width: 767px) {
+    .default-h1 {
+      font-size: 4.25rem; } }
+  @media (max-width: 991px) {
+    .default-h1 {
+      font-size: 4.875rem; } }
+  @media (max-width: 1199px) {
+    .default-h1 {
+      font-size: 6.375rem; } }
+
+.primary-h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 3.25rem; }
+  @media (max-width: 575px) {
+    .primary-h2 {
+      font-size: 2.25rem; } }
+  @media (max-width: 767px) {
+    .primary-h2 {
+      font-size: 2.375rem; } }
+  @media (max-width: 991px) {
+    .primary-h2 {
+      font-size: 2.875rem; } }
+  @media (max-width: 1199px) {
+    .primary-h2 {
+      font-size: 3.25rem; } }
 
 @font-face {
   font-family: 'font-icon';
@@ -510,7 +557,6 @@ html, body {
         max-width: 100%;
         margin-left: 26px;
         text-align: left;
-        padding-right: 0px;
         margin-right: 0px; } }
     .banner .header-content h1 {
       color: white;
@@ -552,8 +598,7 @@ html, body {
         width: 80%;
         padding-right: 1rem; } }
     .about-company .text .ab-content {
-      width: 35.875rem;
-      margin-left: 11.625rem; }
+      width: 35.875rem; }
       @media (max-width: 575px) {
         .about-company .text .ab-content {
           margin-left: 22px; } }
@@ -686,9 +731,6 @@ footer .bottom-footer {
     text-decoration: none;
     color: black;
     display: inline-block; }
-  .navbar i {
-    display: none;
-    font-size: 1.5625rem; }
 
 .icons {
   display: flex; }
@@ -701,6 +743,8 @@ footer .bottom-footer {
       justify-content: center;
       align-items: center;
       padding-right: 1.5625rem; }
+      .icons a i:hover {
+        color: #ee5d30; }
 
 .main-nav {
   list-style-type: none;
@@ -708,6 +752,8 @@ footer .bottom-footer {
   .main-nav .nav-links {
     text-decoration: none;
     color: black; }
+    .main-nav .nav-links:hover {
+      color: #ee5d30; }
   .main-nav li {
     font-family: "Lato", sans-serif;
     padding: 0rem 0.625rem;
@@ -717,31 +763,63 @@ footer .bottom-footer {
   .navbar {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 10px;
+    padding-bottom: 0.625rem;
     align-items: center; }
     .navbar i {
       display: block; }
     .navbar .logo img {
-      width: 6.25rem; }
+      width: 10rem; }
 
   .main-nav {
     display: none; }
+    .main-nav .nav-links {
+      margin-left: 2.5rem; }
+      .main-nav .nav-links li {
+        margin: 0; } }
+.open-nav {
+  font-size: 1.125rem; }
+  .open-nav .closebtn {
+    font-size: 1.875rem; }
 
-  .main-nav li {
-    margin: 0; }
+.fa-bars {
+  display: none;
+  color: black; }
 
-  .nav-links {
-    margin-left: 40px; }
+@media (min-width: 0) and (max-width: 991px) {
+  .fa-bars {
+    display: block;
+    color: black;
+    font-size: 2.1875rem; }
 
-  .logo {
-    margin-top: 0; }
+  .fas.fa-undo {
+    color: black;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: flex-end; } }
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: white; }
+  .sidenav a {
+    font-size: 15px;
+    color: black;
+    transition: 0.3s;
+    display: block;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none; }
+  .sidenav .sidenav .changeIndex {
+    position: absolute;
+    top: 0;
+    font-size: 1.25rem;
+    margin-left: 3.125rem; }
 
-  .navbar-toggle {
-    display: none; }
+.sidenav a:hover {
+  color: #ee5d30; }
 
-  .logo:hover,
-  .nav-links:hover {
-    color: #ee5d30; } }
 .product-box {
   display: flex;
   justify-content: flex-end; }
@@ -886,18 +964,18 @@ footer .bottom-footer {
     justify-content: center; }
     .showcase-box .showcase-images .showcase-images-container .showcase-image {
       text-align: center; } }
-.we-are-creative-agency {
+.services {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 80px 0px; }
-  .we-are-creative-agency .we-are-creative-agency-container {
+  .services .services-container {
     width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative; }
-    .we-are-creative-agency .we-are-creative-agency-container .purple-div {
+    .services .services-container .services-bg-div {
       position: absolute;
       left: -200px;
       top: 0px;
@@ -905,73 +983,74 @@ footer .bottom-footer {
       height: 100%;
       background-color: #2f2339;
       z-index: -1; }
-    .we-are-creative-agency .we-are-creative-agency-container .creative-box-left {
+    .services .services-container .services-box-container {
       background-color: #2f2339;
       min-width: 300px;
       width: 75%; }
-      .we-are-creative-agency .we-are-creative-agency-container .creative-box-left h1 {
+      .services .services-container .services-box-container .services-heading {
         padding: 20px;
         color: #fff;
         font-size: 3.125rem; }
-      .we-are-creative-agency .we-are-creative-agency-container .creative-box-left div {
+      .services .services-container .services-box-container div {
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
         align-items: center;
         color: #fff;
         padding-bottom: 30px; }
-        .we-are-creative-agency .we-are-creative-agency-container .creative-box-left div .box {
+        .services .services-container .services-box-container div .description-box {
           margin: 20px;
-          width: 300px;
+          width: 380px;
           min-width: 275px;
           max-width: 100%;
           padding-right: 85px; }
-          .we-are-creative-agency .we-are-creative-agency-container .creative-box-left div .box p {
+          .services .services-container .services-box-container div .description-box .services-box-p {
             line-height: 30px;
             font-size: 1.25rem; }
-            .we-are-creative-agency .we-are-creative-agency-container .creative-box-left div .box p span {
+            .services .services-container .services-box-container div .description-box .services-box-p span {
+              font-weight: bold;
               display: block;
               padding: 10px 0px; }
-    .we-are-creative-agency .we-are-creative-agency-container .ipad-right {
+    .services .services-container .ipad-img {
       width: 50%;
       display: flex;
       justify-content: flex-start;
       align-items: center; }
-      .we-are-creative-agency .we-are-creative-agency-container .ipad-right img {
+      .services .services-container .ipad-img img {
         margin-left: -120px; }
   @media (max-width: 1199px) {
-    .we-are-creative-agency {
+    .services {
       display: block;
       text-align: center; }
-      .we-are-creative-agency .we-are-creative-agency-container {
+      .services .services-container {
         width: 100%;
         display: block; }
-        .we-are-creative-agency .we-are-creative-agency-container .purple-div {
+        .services .services-container .purple-div {
           position: absolute;
           left: -200px;
           top: 0px;
           width: 100%;
           height: 50%;
           z-index: -1; }
-        .we-are-creative-agency .we-are-creative-agency-container .creative-box-left {
+        .services .services-container .services-box-container {
           width: 100%;
           margin: 0 auto;
           padding-bottom: 150px; }
-          .we-are-creative-agency .we-are-creative-agency-container .creative-box-left div {
+          .services .services-container .services-box-container div {
             justify-content: center; }
-            .we-are-creative-agency .we-are-creative-agency-container .creative-box-left div .box {
-              width: 40%;
+            .services .services-container .services-box-container div .description-box {
+              width: 45%;
               padding: 5px; }
-        .we-are-creative-agency .we-are-creative-agency-container .ipad-right {
+        .services .services-container .ipad-img {
           width: 100%;
           margin-top: -150px;
           justify-content: center; }
-          .we-are-creative-agency .we-are-creative-agency-container .ipad-right img {
+          .services .services-container .ipad-img img {
             margin: 5px 0px;
             height: 350px;
             width: 300px; } }
 
-.we-are-creative {
+.watch-sec {
   margin-top: 150px;
   margin-bottom: 150px;
   background-color: #ee5d30;
@@ -979,12 +1058,12 @@ footer .bottom-footer {
   justify-content: center;
   height: 450px;
   align-items: center; }
-  .we-are-creative .we-are-orange-container {
+  .watch-sec .watch-sec-box {
     width: 80%;
     display: flex;
     justify-content: center;
     align-items: center; }
-    .we-are-creative .we-are-orange-container h1 {
+    .watch-sec .watch-sec-box .watch-sec-heading {
       font-size: 3.125rem;
       color: #fff;
       width: 100%;
@@ -993,25 +1072,23 @@ footer .bottom-footer {
       display: flex;
       justify-content: flex-start;
       align-items: center; }
-      .we-are-creative .we-are-orange-container h1 img {
-        margin-left: 100px;
-        transform: scale(1.1); }
+      .watch-sec .watch-sec-box .watch-sec-heading img {
+        margin-left: 100px; }
   @media (max-width: 1199px) {
-    .we-are-creative {
+    .watch-sec {
       display: block;
       text-align: center; }
-      .we-are-creative .we-are-orange-container {
+      .watch-sec .watch-sec-box {
         width: 100%; }
-        .we-are-creative .we-are-orange-container h1 {
+        .watch-sec .watch-sec-box .watch-sec-heading {
           padding: 10px;
           flex-direction: column;
           line-height: 40px;
           font-size: 3.75rem; }
-          .we-are-creative .we-are-orange-container h1 img {
+          .watch-sec .watch-sec-box .watch-sec-heading img {
             margin-top: 30px;
             height: 300px;
-            margin: 30px;
-            transform: scale(1); } }
+            margin: 30px; } }
 
 .features {
   display: flex;

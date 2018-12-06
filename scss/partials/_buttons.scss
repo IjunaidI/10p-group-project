@@ -3,30 +3,32 @@
 //===========================================
 
 .btn {
-  font-weight: bold;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 5px;
-  &[disabled], &.disabled{
-    cursor: not-allowed;
-  }
-}
-.btn-primery-purple,.btn-primery-orange,.btn-global{
-  height: rem(68);
-  width: rem(215);
+  padding: 22px 40px;
   font-weight: bold;
   font-family: $font-primery;
   font-size: 18px;
   border: none;
   color: white;
   @include mq('md', max){
-   width:rem(280);
+  padding: 18px 32px;
 }
+  &[disabled], &.disabled{
+    cursor: not-allowed;
+  }
+  &:hover{
+    background-color: $gray;
+    color: white;
+  }
+
+  @include mq('lg', max){
+    font-size: rem(14);
+  }
 }
-.btn-primery-orange{
+
+.btn-primary{
  background-color: $primery-color;
 }
-.btn-primery-purple{
+.btn-secondry{
  background-color: $secondry-color;
 }
 //===========================================

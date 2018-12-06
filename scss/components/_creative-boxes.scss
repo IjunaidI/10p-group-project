@@ -1,16 +1,16 @@
 
-.we-are-creative-agency {
+.services {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding: 80px 0px;
-	.we-are-creative-agency-container {
+	.services-container {
 		width: 80%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		position: relative;
-		.purple-div {
+		.services-bg-div {
 			position: absolute;
 			left: -200px;
 			top: 0px;
@@ -19,11 +19,11 @@
 			background-color: #2f2339;
 			z-index: -1;
 		}
-		.creative-box-left {
+		.services-box-container {
 			background-color:  #2f2339;
 			min-width: 300px;
 			width: 75%;
-			h1 {
+			.services-heading {
 				padding: 20px;
 				color: $white;
 				font-size: rem(50);
@@ -37,16 +37,17 @@
 				padding-bottom: 30px;
 				
 				
-				.box {
+				.description-box {
 					margin: 20px;
-					width: 300px;
+					width: 380px;
 					min-width: 275px;
 					max-width: 100%;
 					padding-right: 85px;
-					p {
+					.services-box-p {
 						line-height: 30px;
 						font-size: rem(20);
 						span {
+							font-weight: bold;
 							display: block;
 							padding: 10px 0px;
 						}
@@ -54,7 +55,7 @@
 				}
 			}
 		}
-		.ipad-right {
+		.ipad-img {
 			width: 50%;
 			display: flex;
 			justify-content: flex-start;
@@ -67,7 +68,7 @@
 	@include mq('xl', max)  {
 		display: block;
 		text-align: center;
-		.we-are-creative-agency-container {
+		.services-container {
 			width: 100%;
 			display: block;
 			.purple-div {
@@ -78,19 +79,19 @@
 				height: 50%;
 				z-index: -1;
 			}
-			.creative-box-left {
+			.services-box-container {
 				width: 100%;
 				margin: 0 auto;
 				padding-bottom: 150px;
 				div {
 					justify-content: center;
-					.box {
-						width: 40%;
+					.description-box {
+						width: 45%;
 						padding: 5px;
 					}
 				}
 			}
-			.ipad-right {
+			.ipad-img {
 				width: 100%;
 				margin-top: -150px;
 				justify-content: center;
@@ -104,7 +105,10 @@
 	}
 }
 // start 
-.we-are-creative {
+
+
+
+.watch-sec {
 	margin-top: 150px;
 	margin-bottom: 150px;
 	background-color: #ee5d30;
@@ -112,12 +116,12 @@
 	justify-content: center;
 	height: 450px;
 	align-items: center;
-	.we-are-orange-container {
+	.watch-sec-box {
 		width: 80%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		h1 {
+		.watch-sec-heading {
 			font-size: rem(50);
 			color: $white;
 			width: 100%;
@@ -128,16 +132,16 @@
 			align-items: center;
 			img {
 				margin-left: 100px;
-				transform: scale(1.1);
+				// transform: scale(1.1);
 			}
 		}
 	}
 	@include mq('xl', max)  {
 		display: block;
 		text-align: center;
-		.we-are-orange-container {
+		.watch-sec-box {
 			width: 100%;
-			h1 {
+			.watch-sec-heading {
 				padding: 10px;
 				flex-direction: column;
 				line-height: 40px;
@@ -146,7 +150,7 @@
 					margin-top: 30px;
 					height: 300px;
 					margin: 30px;
-					transform: scale(1.0);
+					// transform: scale(1.0);
 				}
 			}
 		} 

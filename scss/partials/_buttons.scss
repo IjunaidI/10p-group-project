@@ -21,7 +21,6 @@
         cursor: not-allowed;
     }
     &:hover {
-        background-color: $gray;
         color: white;
     }
    
@@ -29,10 +28,16 @@
 
 .btn-primary {
     background-color: $primery-color;
+    &:hover{
+        background-color: darken($primery-color, 10%);
+    }
 }
 
 .btn-secondry {
     background-color: $secondry-color;
+    &:hover{
+        background-color: lighten($secondry-color, 10%);
+    }
 }
 
 //===========================================

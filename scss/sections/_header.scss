@@ -43,17 +43,12 @@
             }
         }
         p {
-            font-size: rem(18);
             color: white;
             padding-bottom: rem(38);
             padding-top: rem(68);
-            line-height: rem(28);
-            font-family: $font-default;
             @include mq('sm',
             max) {
-                font-size: 15px;
                 padding-top: 1.1875rem;
-                line-height: 15px;
             }
         }
     }
@@ -87,22 +82,13 @@
             }
             .top {
                 color: white;
-                font-size: rem(18);
-                line-height: rem(28);
                 padding-bottom: rem(22);
-                @include mq('sm',
-                max) {
-                    font-size: 13px;
-                }
             }
             .bottom {
                 color: white;
-                font-size: rem(18);
                 padding-bottom: rem(70);
-                line-height: rem(30);
                 @include mq('sm',
                 max) {
-                    font-size: 13px;
                     padding-bottom: 15px;
                 }
             }

@@ -26,11 +26,11 @@
 //===========================================
 
 @import 'partials/_fonts';
+@import 'partials/_font-icons';
 @import 'partials/_classes';
 @import 'partials/_buttons';
 @import 'partials/_forms';
 @import 'partials/_global';
-@import 'partials/_font-icons';
 
 //===========================================
 // -Partials End
@@ -41,12 +41,12 @@
 // -components Start
 //===========================================
 
-@import 'components/_header';
-@import 'components/_footer';
-@import 'components/_navbar';
-@import 'components/_product-box';
-@import 'components/_showcase-box';
-@import 'components/_creative-boxes';
+@import 'sections/_header';
+@import 'sections/_footer';
+@import 'sections/_navbar';
+@import 'sections/_product-box';
+@import 'sections/_showcase-box';
+@import 'sections/_creative-boxes';
 
 
 //===========================================

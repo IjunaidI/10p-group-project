@@ -24,7 +24,6 @@
         }
         p {
             line-height: rem(30);
-            font-size: rem(18);
         }
     }
     img {
@@ -58,10 +57,16 @@
             p {
                 color: white;
                 font-family: $font-default;
+                
+            }
+            h3{
+                @include mq('sm',max){
+                    font-size: 16px;
+                    margin-bottom: 8px;
+                }
             }
             p {
                 line-height: rem(30);
-                font-size: rem(18);
                 margin-bottom: 20px;
             }
         }
@@ -88,7 +93,7 @@
                     align-items: center;
                     text-align: center;
                     button {
-                        font-size: rem(12);
+                        margin-bottom:rem(28);
                     }
                 }
             }
@@ -100,6 +105,14 @@
                 justify-content: center;
                 .showcase-image {
                     text-align: center;
+                    @include mq('sm',max){
+                        width: 100%;
+                        margin-bottom: 18px;
+                        h3{
+                            font-size: 16px;
+                            margin-bottom: 8px;
+                        }
+    }
                 }
             }
         }

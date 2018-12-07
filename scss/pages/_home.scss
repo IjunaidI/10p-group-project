@@ -24,6 +24,10 @@
             text-align: center;
             justify-content: center;
         }
+
+        @include mq('md', max){
+            margin-bottom: 20px;
+        }
         .features-heading {
             color: #333333;
             letter-spacing: 1px;
@@ -96,6 +100,7 @@
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
+                margin-bottom: 20px;
                 .logo-image {
                     padding: 0rem;
                     width: 8rem;
@@ -110,12 +115,22 @@
                 letter-spacing: 2px;
                 color: $white;
                 padding: rem(10);
+
+                @include mq('sm', max){
+                    font-size: 14px;
+                }
             }
             p {
                 width: rem(200);
                 margin-top: rem(60);
                 font-size: rem(18);
                 color: #949494;
+
+                @include mq('md', max){
+                    font-size: 14px;
+                    width: rem(350);
+
+                }
             }
         }
     }

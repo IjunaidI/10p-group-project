@@ -8,6 +8,11 @@
     font-size: 18px;
     border: none;
     color: white;
+
+    @include mq('lg', max) {
+        font-size: 14px;
+    }
+
     @include mq('md', max) {
         padding: 18px 32px;
     }
@@ -19,9 +24,7 @@
         background-color: $gray;
         color: white;
     }
-    @include mq('lg', max) {
-        font-size: rem(14);
-    }
+   
 }
 
 .btn-primary {

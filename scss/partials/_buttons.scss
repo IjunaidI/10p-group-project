@@ -23,7 +23,6 @@
     &:hover {
         color: white;
     }
-   
 }
 
 .btn-primary {
@@ -31,12 +30,20 @@
     &:hover{
         background-color: darken($primery-color, 10%);
     }
+
+    &:active{
+        background-color: lighten($primery-color, 15%);
+    }
 }
 
 .btn-secondry {
     background-color: $secondry-color;
     &:hover{
         background-color: lighten($secondry-color, 10%);
+    }
+
+    &:active{
+        background-color: lighten($secondry-color, 15%);
     }
 }
 

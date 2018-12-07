@@ -21,7 +21,8 @@ footer {
                 padding: 0 rem(230);
                 @include mq('md',
                 max) {
-                    padding: 0 rem(100);
+										padding: 0 rem(50);
+										line-height: 1.5;
                 }
             }
         }
